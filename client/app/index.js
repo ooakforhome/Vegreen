@@ -13,13 +13,11 @@ import Mission from './components/pages/mission';
 
 render((
   <Router>
-    <div>
-        <Route path="/" component = { Header } />
-          <Route exact path="/" component = { Home } />
-          <Route exact path="/menu" component = { Menus } />
-          <Route exact path="/find-us" component = { FindUs } />
-          <Route exact path="/mission" component = { Mission } />
-        <Route path="/" component = { Footer } />
-    </div>
+    <Route path="/" component = { Header } />
+      <Route exact path="/" component = { Home } />
+      <Route exact path="/menu" component = { Menus } />
+      <Route exact path="/find-us" component = { FindUs } />
+      <Route exact path="/mission" component = { Mission } />
+    <Route path="/" component = { Footer } />
   </Router>
 ), document.getElementById('app'));

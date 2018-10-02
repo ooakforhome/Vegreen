@@ -24,4 +24,4 @@ render((
         <Route path="/" component = { Footer } />
     </div>
   </Router>
-), document.getElementById('react-container'));
+), document.getElementById('app'));

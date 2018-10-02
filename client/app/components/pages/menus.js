@@ -6,9 +6,9 @@ class Menus extends Component {
   constructor(props){
     super(props);
     this.state = {
-      awardImg : "../assets/img/Best_2017.jpg",
-      magzImg  : "../assets/img/AtlMag.jpg",
-      newArrImg: "../assets/img/NewArrival.jpg",
+      awardImg : "",
+      magzImg  : "",
+      newArrImg: "",
       showPopup: false,
       dish1 : "https://preview.ibb.co/iwtDPp/Lee_Food_8_26_160407.jpg",
       dish2 : "https://preview.ibb.co/iwtDPp/Lee_Food_8_26_160407.jpg",

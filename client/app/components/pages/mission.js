@@ -4,7 +4,7 @@ class Mission extends Component {
   constructor(props){
     super(props);
       this.state = {
-        vegreenImg: "../assets/img/SS006.jpg"
+        vegreenImg: ""
       }
   }
 

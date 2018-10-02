@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import './styles/newstyle.scss';
+// import './styles/newstyle.scss';
 
 import Header from './components/core/header.js';
 import Footer from './components/core/footer.js';

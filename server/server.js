@@ -25,6 +25,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
 // API routes
 require('./routes')(app);
 
@@ -58,11 +59,16 @@ if (isDev) {
   });
 }
 
+// image router
+const imageAPI = require("./image-api");
+app.use('/', imageAPI);
+// end image router
+
 app.listen(port, '0.0.0.0', (err) => {
   if (err) {
     console.log(err);
   }
-  console.log("USER PORT ============ PORT =============");
+  console.log("USER PORT ============ "+ port +" =============");
   console.info('>>> 🌎 Open http://0.0.0.0:%s/ in your browser.', port);
 });
 

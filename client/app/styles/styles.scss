@@ -1,3 +1,209 @@
 @charset "UTF-8";
 
-@import 'vendor/normalize';
+html, body { height: 100%; margin:0px; padding: 0px; }
+header { margin-bottom: 50px;clear: both; display: inline-block; position:relative; height: 100px; }
+footer { bottom: 0px; clear: both; height:100px; width: 100%; margin-top: 50px;}
+h1 { text-align: center; margin-bottom: 10px; margin-top:0px; }
+h2 { margin: 5px 0; padding: 0px; }
+p { margin: 0px; padding: 0px; }
+ul { list-style: none; padding: 0px; margin:0px; }
+img {width: 100%; }
+
+//--------------scss
+$left : left;
+$auto : auto;
+$right: right;
+
+/* col */
+.col-12 { width: percentage(12/12); float: $left;}
+.col-11 { width: percentage(11/12); float: $left;}
+.col-10 { width: percentage(10/12); float: $left;}
+.col-9 { width: percentage(9/12); float: $left;}
+.col-8 { width: percentage(8/12); float: $left;}
+.col-7 { width: percentage(7/12); float: $left;}
+.col-6 { width: percentage(6/12); float: $left;}
+.col-5 { width: percentage(5/12); float: $left;}
+.col-4 { width: percentage(4/12); float: $left;}
+.col-3 { width: percentage(3/12); float: $left;}
+.col-2 { width: percentage(2/12); float: $left;}
+.col-1 { width: percentage(1/12); float: $left;}
+
+// Inner box iCol
+.iCol-10 { width: percentage(10/10); margin: auto;}
+.iCol-9 { width: percentage(9/10); margin: auto;}
+.iCol-8 { width: percentage(8/10); margin: auto;}
+.iCol-7 { width: percentage(7/10); margin: auto;}
+.iCol-6 { width: percentage(6/10); margin: auto;}
+.iCol-5 { width: percentage(5/10); margin: auto;}
+.iCol-4 { width: percentage(4/10); margin: auto;}
+.iCol-3 { width: percentage(3/10); margin: auto;}
+.iCol-2 { width: percentage(2/10); margin: auto;}
+.iCol-1 { width: percentage(1/10); margin: auto;}
+
+// fix css
+.float-left { float: left; }
+.float-right { float: right; }
+.clear-right { clear: right; }
+
+.margin-10 { margin: 10px 0;}
+.margin-50 { margin: 50px 0;}
+
+.body_container { height: 80vh; }
+
+.title_h1 { text-align: center; font-size: 3em; font-weight: 700; }
+.title_h2 { text-align: center; font-size: 2em; font-weight: 600; }
+.title_logo { width: 180px; height: 180px; margin:auto; }
+
+.x-button { margin: 5px; }
+// Header
+.page-top { display: block; }
+.nav-container { position:absolute; bottom: 0px; right: 10px; }
+.header_link { margin-left: 15px; float:left; }
+.logo_image { height: 100%; max-height: 100px; max-width: 200px;}
+nav ul li:hover ul{
+  display: block;
+}
+nav ul ul { display: none; background-color: rgba(255,255,255,.8);  position: fixed;   margin-top: 15px; height: 25px;}
+
+
+// Footer
+  .footer_p {
+    text-align: center;
+  }
+  .footer__copyright {
+    font-size: .7em;
+  }
+// Home
+  .g-font {
+    font-family: 'Permanent Marker', cursive;
+    margin: 20px 0;
+    padding: 0 10%;
+    font-size: 1.5em;
+    display: inline-block;
+    float:left;
+  }
+
+  .home_cru { display: inline-block; }
+// Find Us
+  .findUs_container {
+    text-align: center;
+    display: block;
+    margin: 50px 0px;
+    min-width: 450px;
+  }
+  .find_us_form input, .find_us_form label{
+    float:left;
+  }
+  .find_us_input {
+    width: 100%;
+    margin-bottom: 5px;
+    float: left;
+  }
+  .iframe {
+    height: 500px;
+  }
+  .submit_button {
+    width: 100px;
+    float: right;
+  }
+
+  form.col-12.find_us_form {
+      border: 1px solid rgba(0, 0,0,.3);
+      padding: 20px 10px 10px 10px;
+  }
+// MISSION
+  .mission_page {
+    text-align: center;
+    max-width: 800px;
+  }
+
+// menus
+  .menu_title {height: 240px;}
+  .text_center {
+    text-align: center;
+    display: inline-block;
+    clear: both;
+  }
+  .menu_text {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.25em;
+
+  }
+  .menu_box {
+    text-align: center;
+    margin: 15px 5px;
+    display: inline-block;
+    clear: both;
+    float:left;
+  }
+  img.mag_img {height: 180px; width:auto; margin: 0 15%;}
+  .menu-thumb:hover { opacity: .8; }
+  .menu-thumb img { width: 90%; border: 1px solid rgba(0,0,0,0.3);}
+  .menu-thumb p { width: 100%; text-align: center; margin-bottom: 20px;}
+// VideoList
+  .youIframe { width: 325px; height: 225px; }
+
+
+//=-==========pop-up=================================
+.popup {
+  position: fixed;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  margin: 5%;
+  background: white;
+}
+//=-=================================================
+
+@media only screen and (max-width: 480px){
+
+}
+
+@media only screen and (max-width: 640px){
+  .s-col-12 { width: percentage(12/12);}
+  .s-col-11 { width: percentage(11/12); float: $left;}
+  .s-col-10 { width: percentage(10/12); float: $left;}
+  .s-col-9 { width: percentage(9/12); float: $left;}
+  .s-col-8 { width: percentage(8/12); float: $left;}
+  .s-col-7 { width: percentage(7/12); float: $left;}
+  .s-col-6 { width: percentage(6/12); float: $left;}
+  .s-col-5 { width: percentage(5/12); float: $left;}
+  .s-col-4 { width: percentage(4/12); float: $left;}
+  .s-col-3 { width: percentage(3/12); float: $left;}
+  .s-col-2 { width: percentage(2/12); float: $left;}
+  .s-col-1 { width: percentage(1/12); float: $left;}
+
+  .s-iCol-10 { width: percentage(10/10); margin: auto;}
+  .s-iCol-9 { width: percentage(9/10); margin: auto;}
+  .s-iCol-8 { width: percentage(8/10); margin: auto;}
+  .s-iCol-7 { width: percentage(7/10); margin: auto;}
+  .s-iCol-6 { width: percentage(6/10); margin: auto;}
+  .s-iCol-5 { width: percentage(5/10); margin: auto;}
+  .s-iCol-4 { width: percentage(4/10); margin: auto;}
+  .s-iCol-3 { width: percentage(3/10); margin: auto;}
+  .s-iCol-2 { width: percentage(2/10); margin: auto;}
+  .s-iCol-1 { width: percentage(1/10); margin: auto;}
+
+  .s-image { width: 90%; margin: 5%;}
+  .title_logo { width: 180px; height: 200px; padding-top: 10px; margin:auto; }
+
+  .display-hide { display: none;}
+  .body_container { height: auto; }
+}
+
+// @media only screen and (max-width: 780px){
+//   .s-img { margin:0 20%; height: 180px; width:auto; }
+// }

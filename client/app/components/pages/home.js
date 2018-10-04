@@ -5,7 +5,7 @@ class Home extends Component {
   constructor(props){
     super(props);
     this.state = {
-      img1: '/api/image/SS006.JPG',
+      img1: '/api/image/SS006.jpg',
       img2: "/api/image/SS007.jpg",
       img3: "/api/image/SS008.jpg",
     }

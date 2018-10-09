@@ -15,26 +15,15 @@ class FindUs extends Component {
     })
   }
 
-
-  resetForm(){
-    document.getElementById('contact-form').reset();
-  }
-
-  handleSubmit(e){
-      e.preventDefault();
-      axios.post("/api/send", {
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message
-      })
-        .then((response)=>{
-          if (response.data.msg === 'success'){
-              alert("Message Sent.");
-              this.resetForm()
-          }else if(response.data.msg === 'fail'){
-              alert("Message failed to send.")
-          }
-      })
+  handEmailSubmit(e){
+    e.preventDefault();
+    axios.post("/api/newcontact", {
+      name: this.state.name,
+      email: this.state.email,
+      phone: this.state.phone,
+      message: this.state.message
+    })
+    .then(res => window.location.reload())
   }
 
   render(){
@@ -47,7 +36,7 @@ class FindUs extends Component {
 
         <div className="col-12 findUs_container">
           <div className="s-iCol-8 iCol-6">
-            <form className="col-12 find_us_form" onSubmit={this.handleSubmit.bind(this)}>
+            <form className="col-12 find_us_form" onSubmit={this.handEmailSubmit.bind(this)}>
               <h2>LEAVE US A MESSAGE</h2>
               <div className="find_us_input">
                 <label className="col-2">Name :</label>
@@ -58,8 +47,12 @@ class FindUs extends Component {
                 <input className="col-9" type="email" name="email" value={this.props.email} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="find_us_input">
+                <label className="col-2">Phone :</label>
+                <input className="col-9" type="phone" name="phone" value={this.props.phone} onChange={this.onChanges.bind(this)}/>
+              </div>
+              <div className="find_us_input">
                 <label className="col-2">Message :</label>
-                <textarea className="col-9" name="message" rows="5" value={this.props.message} onChange={this.onChanges.bind(this)}/>
+                <input className="col-9" type="field" name="message" value={this.props.message} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="submit_button">
                 <input className="float-right" type="submit" name="submit" />

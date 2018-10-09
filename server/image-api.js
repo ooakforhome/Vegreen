@@ -78,6 +78,11 @@ router.get('/api/image/:filename', (req, res) =>{
   })
 });
 
+router.get('/api/allfiles', (req, res) => {
+  gfs.files.find()
+    .then(res => console.log(res.json()))
+});
+
 // load Images
 router.get('/api/files', (req, res) =>{
   gfs.files.find().toArray((err, files)=>{
@@ -89,7 +94,6 @@ router.get('/api/files', (req, res) =>{
     }
     //Files exist
     return res.json(files);
-    console.log("readely")
   });
 });
 

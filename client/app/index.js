@@ -16,6 +16,10 @@ import Mission from './components/pages/mission';
 import Gall from './components/pages/parts/imageGallery';
 import Upload from './components/pages/parts/imageUpload';
 
+// TEST
+import ImgSlide from './components/pages/imageSlide/imgSlide';
+import Mailbox from './components/pages/mailBox/mail';
+
 render((
   <Router>
     <div>
@@ -26,6 +30,8 @@ render((
         <Route exact path="/mission" component = { Mission } />
         <Route exact path="/gal" component = { Gall } />
         <Route exact path="/upload" component = { Upload } />
+        <Route exact path="/slide" component = { ImgSlide } />
+        <Route exact path="/mailin" component = { Mailbox } />
       <Route path="/" component = { Footer } />
     </div>
   </Router>

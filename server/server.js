@@ -63,6 +63,11 @@ if (isDev) {
 const imageAPI = require("./image-api");
 app.use('/', imageAPI);
 // end image router
+// mail router
+const mailAPI = require("./routes/mailRoute/mailTrans");
+app.use('/', mailAPI)
+// end mail router
+
 
 app.listen(port, '0.0.0.0', (err) => {
   if (err) {

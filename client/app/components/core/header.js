@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => (
     <header className="page-top">
       <div className="col-4 float-left">
-        <img alt="Vegreen logo" src="https://image.ibb.co/kWFzx9/Ve_Green_Logo_update_Long.jpg" className="logo_image"/>
+        <Link to="/">
+          <img alt="Vegreen logo" src="https://image.ibb.co/kWFzx9/Ve_Green_Logo_update_Long.jpg" className="logo_image"/>
+        </Link>
       </div>
       <div className="col-8 float-left">
         <nav className="nav-container">

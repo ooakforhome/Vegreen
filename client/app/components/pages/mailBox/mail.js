@@ -10,10 +10,6 @@ class MailBox extends Component {
   }
 
 
-  resetForm(){
-    document.getElementById('contact-form').reset();
-  }
-
   handleSubmit(e){
       e.preventDefault();
       axios.post("/api/send", {
@@ -24,7 +20,6 @@ class MailBox extends Component {
         .then((response)=>{
           if (response.data.msg === 'success'){
               alert("Message Sent.");
-              this.resetForm()
           }else if(response.data.msg === 'fail'){
               alert("Message failed to send.")
           }

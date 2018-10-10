@@ -3,15 +3,16 @@ const creds = require('./creds');
 const router = require('express').Router();
 const Contact = require('../../models/Contact');
 
-var transport = {
-  host: 'smtp.gmail.com',
-  auth: {
+
+const transport = {
+host: 'email-smtp.us-east-1.amazonaws.com',
+auth: {
     user: creds.USER,
     pass: creds.PASS
   }
-}
+};
 
-var transporter = nodemailer.createTransport(transport)
+const transporter = nodemailer.createTransport(transport)
 
 transporter.verify((error, success) => {
   if (error) {
@@ -24,13 +25,13 @@ transporter.verify((error, success) => {
 
 
   router.post('/api/send', (req, res, next) => {
-    var name = req.body.name
-    var email = req.body.email
-    var message = req.body.message
+    var name = req.body.name;
+    var email = req.body.email;
+    var message = req.body.message;
     var content = `name: ${name} \n email: ${email} \n message: ${message} `
 
     var mail = {
-      from: 'vegreenfusion02@gmail.com',
+      from: 'david@eleganthf.net',
       to: 'vegreenfusion02@gmail.com',
       subject: `Vegreen Message: ${name}`,
       text: `from: ${email} \n Message: ${message}`

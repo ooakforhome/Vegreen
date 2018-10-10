@@ -1,5 +1,5 @@
 
 module.exports = {
-    USER: 'vegreenfusion02@gmail.com',
-    PASS: 'Buddha3388#'
+    USER: 'AKIAJ7PFQ5KKJPJLGQKAm',
+    PASS: 'AgMeF4IK1mfC3DfcxAlznTt7pHmywfsXRnDVm8QO1OOB'
 }

@@ -7,8 +7,8 @@ const Contact = require('../../models/Contact');
 const transport = {
 host: 'email-smtp.us-east-1.amazonaws.com',
 auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    user: 'AKIAJ7PFQ5KKJPJLGQKA',
+    pass: 'AgMeF4IK1mfC3DfcxAlznTt7pHmywfsXRnDVm8QO1OOB'
   }
 };
 
@@ -34,7 +34,7 @@ transporter.verify((error, success) => {
       from: 'david@eleganthf.net',
       to: 'vegreenfusion02@gmail.com',
       subject: `Vegreen Message: ${name}`,
-      text: `from: ${email} \n Message: ${message}`
+      text: `Name: ${name}\n E-Mail: ${email}\n Message: ${message}`
     }
     Contact.create(req.body)
     transporter.sendMail(mail, (err, data) => {

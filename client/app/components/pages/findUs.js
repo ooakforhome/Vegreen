@@ -15,8 +15,6 @@ class FindUs extends Component {
     })
   }
 
-
-
   handleSubmit(e){
       e.preventDefault();
       axios.post("/api/send", {
@@ -43,7 +41,7 @@ class FindUs extends Component {
 
         <div className="col-12 findUs_container">
           <div className="s-iCol-8 iCol-6">
-            <form className="col-12 find_us_form" onSubmit={this.handleSubmit.bind(this)}>
+            <form id="contact-form" className="col-12 find_us_form" onSubmit={this.handleSubmit.bind(this)}>
               <h2>LEAVE US A MESSAGE</h2>
               <div className="find_us_input">
                 <label className="col-2">Name :</label>

@@ -5,12 +5,12 @@ const GridFsStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
 const express = require('express');
 const bodyParser = require('body-parser');
-const router = require('express').Router();
+// const router = require('express').Router();
 const axios = require('axios');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const config = require('../config/config');
+const config = require('../../../config/config');
 const mongoURI = config.db;
 const conn = mongoose.createConnection(mongoURI);
 
@@ -46,10 +46,10 @@ const storage = new GridFsStorage({
 
 const upload = multer({ storage }).single('file');
 
+module.exports = (app) => {
 
-
-// upload images
-router.post('/api/upload/', upload, (req, res) => {
+// Upload images
+app.post('/api/upload/', upload, (req, res) => {
     console.log("<<=======================>>");
     console.log(req.file)
     console.log("<<=======================>>");
@@ -58,7 +58,7 @@ router.post('/api/upload/', upload, (req, res) => {
 });
 
 // Get single image
-router.get('/api/image/:filename', (req, res) =>{
+app.get('/api/image/:filename', (req, res) =>{
   gfs.files.findOne({filename: req.params.filename}, (err, file) => {
     if(!file || file.length === 0) {
       return res.status(404).json({
@@ -78,13 +78,9 @@ router.get('/api/image/:filename', (req, res) =>{
   })
 });
 
-router.get('/api/allfiles', (req, res) => {
-  gfs.files.find()
-    .then(res => console.log(res.json()))
-});
 
-// load Images
-router.get('/api/files', (req, res) =>{
+// Get all files
+app.get('/api/afiles', (req, res) =>{
   gfs.files.find().toArray((err, files)=>{
     // Check if files
     if(!files || files.length === 0) {
@@ -97,4 +93,38 @@ router.get('/api/files', (req, res) =>{
   });
 });
 
-module.exports = router;
+// Delete a file
+app.delete('/api/delete/:filename', (req, res) =>{
+  gfs.files.findOne({filename: req.params.filename}, (err, file) => {
+    if(!file || file.length === 0) {
+      return res.status(404).json({
+        err: 'No files exist'
+      });
+    }
+    // Check if image
+    if(file || file.length > 0){
+      gfs.files.deleteOne({filename: req.params.filename}, (info) => {
+        console.log("deteled")
+        console.log(res.json({info: "delete complete"}))
+      })
+    }
+  })
+});
+
+app.delete('/api/deletebyid/:_id', (req, res) =>{
+  gfs.files.findOne({_id: req.params._id}, (err, file) => {
+    if(!file || file.length === 0) {
+      return res.status(404).json({
+        err: 'No files exist'
+      });
+    }
+    // Check if image
+    if(file || file.length > 0){
+      gfs.files.deleteOne({_id: req.params._id}, (info) => {
+        console.log(res.json({info: "delete complete"}))
+      })
+    }
+  })
+});
+
+}; //end module

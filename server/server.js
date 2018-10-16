@@ -59,13 +59,14 @@ if (isDev) {
   });
 }
 
+
 // image router
-const imageAPI = require("./image-api");
+const imageAPI = require("./routes/api/image-api");
 app.use('/', imageAPI);
 // end image router
 // mail router
 const mailAPI = require("./routes/mailRoute/mailTrans");
-app.use('/', mailAPI)
+app.use('/', mailAPI);
 // end mail router
 
 

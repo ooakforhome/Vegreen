@@ -15,9 +15,6 @@ class FindUs extends Component {
     })
   }
 
-  resetForm(){
-   docment.getElementById('contact-form').reset();
-  }
 
   handleSubmit(e){
       e.preventDefault();
@@ -29,7 +26,6 @@ class FindUs extends Component {
         .then((response)=>{
           if (response.data.msg === 'success'){
               alert("Message Sent.");
-		this.resetForm();
           }else if(response.data.msg === 'fail'){
               alert("Message failed to send.")
           }

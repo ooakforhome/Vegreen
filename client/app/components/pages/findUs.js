@@ -14,7 +14,7 @@ class FindUs extends Component {
       [e.target.name]: e.target.value
     })
   }
-
+  
   handleSubmit(e){
       e.preventDefault();
       axios.post("/api/send", {

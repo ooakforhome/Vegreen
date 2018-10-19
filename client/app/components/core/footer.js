@@ -32,10 +32,10 @@ const Footer = () => (
         </ul>
       </div>
       <div className="col-12 footer_p">
-        <img className="col-3" alt="fb" src="fb.jpg" />
-        <img className="col-3" alt="in" src="in.jpg" />
-        <img className="col-3" alt="gplus" src="gplus.jpg" />
-        <img className="col-3" alt="tweet" src="tweet.jpg" />
+        <img className="col-3" alt="fb" src="https://cdn4.iconfinder.com/data/icons/robocat-logo/500/robocat_cat-512.png" />
+        <img className="col-3" alt="in" src="https://cdn4.iconfinder.com/data/icons/robocat-logo/500/robocat_cat-512.png" />
+        <img className="col-3" alt="gplus" src="https://cdn4.iconfinder.com/data/icons/robocat-logo/500/robocat_cat-512.png" />
+        <img className="col-3" alt="tweet" src="https://cdn4.iconfinder.com/data/icons/robocat-logo/500/robocat_cat-512.png" />
       </div>
     </div>
   </footer>

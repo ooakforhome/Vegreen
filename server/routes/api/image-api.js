@@ -63,13 +63,14 @@ app.post('/api/upload', upload, (req, res)=>{
 });
 
 
+
 app.delete('/filesdele/:id', (req, res) => {
   gfs.remove({ _id: req.params.id, root: 'uploads' }, (err, gridStore) => {
     if (err) {
       return res.status(404).json({ err: err });
     }
-
-    res.redirect('/');
+    return res.json({delete: "successful"})
+    // res.redirect('/');
   });
 });
 
@@ -161,4 +162,4 @@ app.delete('/api/delete/:filename', (req, res) =>{
 
 
 
-}; //end module
+}; //end module`  

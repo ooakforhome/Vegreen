@@ -1,44 +1,65 @@
 import React, { Component } from 'react';
+import API from '../api-modules';
 import axios from 'axios';
 
 class ImageGallery extends Component {
   constructor(props){
     super(props);
       this.state={
-        images : {}
+        data: [],
+        images: []
       }
   }
 
-componentWillMount(){
-  this.setState({
-    images : axios.get('/api/images')
-  })
-};
+  componentDidMount(){
+    this.loadImageData();
+  }
+
+  loadImageData=()=>{
+    API.getImages()
+      .then(res => {
+        console.log(res.data);
+        this.setState({
+          images: res.data
+        })
+      })
+  }
+
+  removeImg(e){
+    e.preventDefault();
+    API.deleteImage(e.target.value)
+      .then(res=> {
+        this.loadImageData();
+      })
+  }
 
   render(){
-//     const AllImg = ({filename}) => (
-//       <div>
-//       <p>{filename}</p>
-//       <img alt={filename} src="/api/image/{filename}" />
-//       </div>
-//     )
-//
-//     const ProductList = ({products}) => (
-//   <div>
-//     {products.map((product, i) =>
-//       <AllImg key={i}
-//               {...product}
-//               />
-//     )}
-//   </div>
-// )
+
+    const ShowImg = ({_id, filename}) => (
+      <div className="col-4">
+        <p>{filename}</p>
+        <img alt={filename} src={`/api/image/${filename}`} />
+        <p className="abc">{_id}}</p>
+        <button value={_id} onClick={this.removeImg.bind(this)}>Delete</button>
+      </div>
+    )
+
+    const ShowAllImg = ({datas}) => (
+        <div>
+          {datas.map((data, i) =>
+            <ShowImg key={i}
+                    {...data}
+                    />
+          )}
+        </div>
+      )
 
     return(
       <div>
-        <p>{this.props.images}</p>
+        <ShowAllImg datas={this.state.images}/>
       </div>
     )
   }
-}
+};
 
 export default ImageGallery;

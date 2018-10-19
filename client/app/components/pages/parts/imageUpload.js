@@ -19,7 +19,7 @@ class ImageUpload extends Component {
       body: formData
     }).then(res => res.json())
        .then(data => {
-         if(data.success){
+         if(data){
            alert('Upload Successfully!!')
          } else {
            alert('Upload failed')

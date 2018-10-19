@@ -62,6 +62,7 @@ app.post('/api/upload', upload, (req, res)=>{
     return res.json({upload: req.file.filename})
 });
 
+
 app.delete('/filesdele/:id', (req, res) => {
   gfs.remove({ _id: req.params.id, root: 'uploads' }, (err, gridStore) => {
     if (err) {

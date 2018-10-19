@@ -10,10 +10,18 @@ class Menus extends Component {
       magzImg  : "/api/image/AtlMag.jpg",
       newArrImg: "/api/image/NewArrival.jpg",
       showPopup: false,
-      dish1 : "https://preview.ibb.co/iwtDPp/Lee_Food_8_26_160407.jpg",
-      dish2 : "https://preview.ibb.co/iwtDPp/Lee_Food_8_26_160407.jpg",
-      dish3 : "https://preview.ibb.co/iwtDPp/Lee_Food_8_26_160407.jpg",
-      dish4 : "https://preview.ibb.co/iwtDPp/Lee_Food_8_26_160407.jpg",
+      menu1: "/api/image/menu1.jpg",
+      menu2: "/api/image/menu2.jpg",
+      menuSushi: "/api/image/menuSushi.jpg",
+      menuLunch: "/api/image/menuLunch.jpg",
+      menu1L: "/api/image/menu1L.jpg",
+      menu2L: "/api/image/menu2L.jpg",
+      menuSushiL: "/api/image/menuSushiL.jpg",
+      menuLunchL: "/api/image/menuLunchL.jpg",
+      dish1 : "/api/image/dish-01-360px-240px",
+      dish2 : "/api/image/dish-02-360px-240px",
+      dish3 : "/api/image/dish-03-360px-240px",
+      dish4 : "/api/image/dish-04-360px-240px",
       text1: "Vegreen\'s menu is carefully designed for your healthy consumption and we have the best flavor you can imagine\. Moreover, We bring out the flavor of the world\. We want to open up your mind\, and show you that vegetarian has no boundary\. From Asia\, to Europe\, to North and South America\, or to Australia\, \"Any type of dish can now be replaced by vegetarian\"\, and it will taste as good as the original dish if not better\."
     }
   }
@@ -23,7 +31,7 @@ class Menus extends Component {
     e.preventDefault();
     this.setState({
       showPopup: !this.state.showPopup,
-      img: e.target.src,
+      img: e.target.src + "L",
       name: e.target.name
     });
   }
@@ -55,7 +63,7 @@ class Menus extends Component {
           <div className="s-col-6 col-3 menu-thumb">
             <img
               alt="menu_01"
-              src="../assets/img/Menu_01.jpg"
+              src={this.state.menu1}
               value={this.state.img1}
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 01</p>
@@ -63,7 +71,7 @@ class Menus extends Component {
           <div className="s-col-6 col-3 menu-thumb">
             <img
               alt="menu_02"
-              src="../assets/img/Menu_02.jpg"
+              src={this.state.menu2}
               value={this.state.img2}
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 02</p>
@@ -72,14 +80,14 @@ class Menus extends Component {
             <img
               alt="Sushi"
               src="../assets/img/Sushi_Menu.jpg"
-              value={this.state.img3}
+              value={this.state.menuSushi}
               onClick={this.togglePopup.bind(this)}/>
             <p>SUSHI MENU</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
               alt="Lunch"
-              src="../assets/img/Soft_Lunch.jpg"
+              src={this.state.menuLunch}
               value={this.state.img4}
               onClick={this.togglePopup.bind(this)}/>
             <p>LUNCH MENU</p>

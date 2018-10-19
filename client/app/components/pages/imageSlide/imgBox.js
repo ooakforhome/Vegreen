@@ -7,7 +7,7 @@ const ImgBox = ({property}) => {
         <div id={`image-${index}`} className="image">
             <img
               src={picture2}
-srcSet={picture+' 1x,'+picture1+' 2x,'+picture2 +' 3x'}
+srcset={picture+' 1x,'+picture1+' 2x,'+picture2 +' 3x'}
               alt={index} />
             <div className="details">
                 <span className="index">{index+1}</span>

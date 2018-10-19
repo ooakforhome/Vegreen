@@ -64,7 +64,7 @@ class Menus extends Component {
             <img
               alt="menu_01"
               src={this.state.menu1}
-              value={this.state.img1}
+              value={this.state.menu1}
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 01</p>
           </div>
@@ -72,14 +72,14 @@ class Menus extends Component {
             <img
               alt="menu_02"
               src={this.state.menu2}
-              value={this.state.img2}
+              value={this.state.menu2}
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 02</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
               alt="Sushi"
-              src="../assets/img/Sushi_Menu.jpg"
+              src={this.state.menuSushi}
               value={this.state.menuSushi}
               onClick={this.togglePopup.bind(this)}/>
             <p>SUSHI MENU</p>
@@ -88,7 +88,7 @@ class Menus extends Component {
             <img
               alt="Lunch"
               src={this.state.menuLunch}
-              value={this.state.img4}
+              value={this.state.menuLunch}
               onClick={this.togglePopup.bind(this)}/>
             <p>LUNCH MENU</p>
           </div>

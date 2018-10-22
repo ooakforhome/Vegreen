@@ -10,18 +10,18 @@ class Menus extends Component {
       magzImg  : "/api/image/AtlMag.jpg",
       newArrImg: "/api/image/NewArrival.jpg",
       showPopup: false,
-      menu1: "/api/image/menu1.jpg",
-      menu2: "/api/image/menu2.jpg",
-      menuSushi: "/api/image/menuSushi.jpg",
-      menuLunch: "/api/image/menuLunch.jpg",
-      menu1L: "/api/image/menu1L.jpg",
-      menu2L: "/api/image/menu2L.jpg",
+      menu1: "/api/image/menu1.JPG",
+      menu2: "/api/image/menu2.JPG",
+      menuSushi: "/api/image/menuSushi.JPG",
+      menuLunch: "/api/image/menuLunch.JPG",
+      menu1L: "/api/image/menu1L.JPG",
+      menu2l: "/api/image/menu2L.jpg",
       menuSushiL: "/api/image/menuSushiL.jpg",
       menuLunchL: "/api/image/menuLunchL.jpg",
-      dish1 : "/api/image/dish-01-360px-240px",
-      dish2 : "/api/image/dish-02-360px-240px",
-      dish3 : "/api/image/dish-03-360px-240px",
-      dish4 : "/api/image/dish-04-360px-240px",
+      dish1 : "/api/image/dish-01-360px-240px.jpg",
+      dish2 : "/api/image/dish-02-360px-240px.jpg",
+      dish3 : "/api/image/dish-03-360px-240px.jpg",
+      dish4 : "/api/image/dish-04-360px-240px.JPG",
       text1: "Vegreen\'s menu is carefully designed for your healthy consumption and we have the best flavor you can imagine\. Moreover, We bring out the flavor of the world\. We want to open up your mind\, and show you that vegetarian has no boundary\. From Asia\, to Europe\, to North and South America\, or to Australia\, \"Any type of dish can now be replaced by vegetarian\"\, and it will taste as good as the original dish if not better\."
     }
   }
@@ -31,7 +31,7 @@ class Menus extends Component {
     e.preventDefault();
     this.setState({
       showPopup: !this.state.showPopup,
-      img: e.target.src + "L",
+      img: e.target.value,
       name: e.target.name
     });
   }
@@ -72,7 +72,7 @@ class Menus extends Component {
             <img
               alt="menu_02"
               src={this.state.menu2}
-              value={this.state.menu2}
+              value={this.state.menu2l}
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 02</p>
           </div>
@@ -80,7 +80,7 @@ class Menus extends Component {
             <img
               alt="Sushi"
               src={this.state.menuSushi}
-              value={this.state.menuSushi}
+              value={this.state.menuSushiL}
               onClick={this.togglePopup.bind(this)}/>
             <p>SUSHI MENU</p>
           </div>
@@ -88,7 +88,7 @@ class Menus extends Component {
             <img
               alt="Lunch"
               src={this.state.menuLunch}
-              value={this.state.menuLunch}
+              value={this.state.menuLunchL}
               onClick={this.togglePopup.bind(this)}/>
             <p>LUNCH MENU</p>
           </div>

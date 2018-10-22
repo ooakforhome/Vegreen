@@ -14,7 +14,7 @@ class Home extends Component {
 
 
   render(){
-
+ 
     return(
       <div className="body_container">
         <div className="front_text">

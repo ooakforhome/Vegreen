@@ -15,7 +15,11 @@ class Menus extends Component {
       menuSushi: "/api/image/menuSushi.JPG",
       menuLunch: "/api/image/menuLunch.JPG",
       menu1L: "/api/image/menu1L.JPG",
+<<<<<<< HEAD
       menu2l: "/api/image/menu2L.jpg",
+=======
+      menu2L: "/api/image/menu2L.jpg",
+>>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
       menuSushiL: "/api/image/menuSushiL.jpg",
       menuLunchL: "/api/image/menuLunchL.jpg",
       dish1 : "/api/image/dish-01-360px-240px.jpg",
@@ -31,7 +35,11 @@ class Menus extends Component {
     e.preventDefault();
     this.setState({
       showPopup: !this.state.showPopup,
+<<<<<<< HEAD
       img: e.target.value,
+=======
+      img: e.target.alt,
+>>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
       name: e.target.name
     });
   }
@@ -52,43 +60,51 @@ class Menus extends Component {
           </div>
           <div className="s-col-12 col-4">
             <div className="title_logo">
-              <img alt="mag" src={this.state.awardImg} />
+              <img className="mag_img" alt="mag" src={this.state.awardImg}/>
             </div>
           </div>
         </div>
         <div className="col-12 text_center">
-          <p className="menu_text">{this.state.text1}</p>
+          <p className="menu_text iCol-7 s-iCol-9">{this.state.text1}</p>
         </div>
         <div className="menu_box">
           <div className="s-col-6 col-3 menu-thumb">
             <img
-              alt="menu_01"
               src={this.state.menu1}
-              value={this.state.menu1}
+              alt={this.state.menu1L}
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 01</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
-              alt="menu_02"
               src={this.state.menu2}
+<<<<<<< HEAD
               value={this.state.menu2l}
+=======
+              alt={this.state.menu2L}
+>>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 02</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
-              alt="Sushi"
               src={this.state.menuSushi}
+<<<<<<< HEAD
               value={this.state.menuSushiL}
+=======
+              alt={this.state.menuSushiL}
+>>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
               onClick={this.togglePopup.bind(this)}/>
             <p>SUSHI MENU</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
-              alt="Lunch"
               src={this.state.menuLunch}
+<<<<<<< HEAD
               value={this.state.menuLunchL}
+=======
+              alt={this.state.menuLunchL}
+>>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
               onClick={this.togglePopup.bind(this)}/>
             <p>LUNCH MENU</p>
           </div>

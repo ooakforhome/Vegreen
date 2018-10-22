@@ -44,16 +44,16 @@ class FindUs extends Component {
             <form id="contact-form" className="col-12 find_us_form" onSubmit={this.handleSubmit.bind(this)}>
               <h2>LEAVE US A MESSAGE</h2>
               <div className="find_us_input">
-                <label className="col-2">Name :</label>
-                <input className="col-9" type="text" name="name" value={this.props.name} onChange={this.onChanges.bind(this)}/>
+                <label className="col-2 s-col-3">Name :</label>
+                <input className="col-9 s-col-8" type="text" name="name" value={this.props.name} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="find_us_input">
-                <label className="col-2">E-Mail :</label>
-                <input className="col-9" type="email" name="email" value={this.props.email} onChange={this.onChanges.bind(this)}/>
+                <label className="col-2 s-col-3">E-Mail :</label>
+                <input className="col-9 s-col-8" type="email" name="email" value={this.props.email} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="find_us_input">
-                <label className="col-2">Message :</label>
-                <textarea className="col-9" name="message" rows="5" value={this.props.message} onChange={this.onChanges.bind(this)}/>
+                <label className="col-2 s-col-3">Message :</label>
+                <textarea className="col-9 s-col-8" name="message" rows="5" value={this.props.message} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="submit_button">
                 <input className="float-right" type="submit" name="submit" />

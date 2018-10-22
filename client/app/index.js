@@ -11,6 +11,8 @@ import Home from './components/pages/home';
 import Menus from './components/pages/menus';
 import FindUs from './components/pages/findUs';
 import Mission from './components/pages/mission';
+import Lunch from './components/pages/lunch';
+import Dinner from './components/pages/dinner';
 
 //parts
 import Gall from './components/pages/parts/imageGallery';
@@ -26,6 +28,8 @@ render((
       <Route path="/" component = { Header } />
         <Route exact path="/" component = { Home } />
         <Route exact path="/menu" component = { Menus } />
+          <Route exact path="/menu/lunch" component = { Lunch } />
+          <Route exact path="/menu/regular" component = { Dinner } />
         <Route exact path="/find-us" component = { FindUs } />
         <Route exact path="/mission" component = { Mission } />
         <Route exact path="/gal" component = { Gall } />

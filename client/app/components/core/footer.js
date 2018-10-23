@@ -4,14 +4,14 @@ class Footer extends Component {
   constructor(props){
     super(props);
       this.state={
-        fbLogo : "www.fb.com.jpg",
-        inLogo : "www.in.com.jpg",
-        gplusLogo : "www.gplus.com.jpg",
-        tweetLogo : "www.tweet.com.jpg",
-        fb : "www.fb.com",
-        in : "www.in.com",
+        fbLogo : "/api/image/fb-icon.png",
+        inLogo : "/api/image/in-icon.png",
+        gplusLogo : "/api/image/Gplus-icon.png",
+        tweetLogo : "/api/image/tw-icon.png",
+        fb : "https://www.facebook.com/vegreenfusion",
+        in : "https://www.instagram.com/vegreenfusion/",
         gplus : "www.gplus.com",
-        tweet : "www.tweet.com"
+        tweet : "https://twitter.com/vegreenfusion"
       }
   }
 

@@ -28,6 +28,7 @@ class FindUs extends Component {
               alert("Message failed to send.")
           }
       })
+      document.getElementById("contact-form").reset();
   }
 
   render(){

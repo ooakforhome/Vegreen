@@ -63,7 +63,7 @@ app.post('/api/upload', upload, (req, res)=>{
 });
 
 
-// Delete image files and chunks
+
 app.delete('/filesdele/:id', (req, res) => {
   gfs.remove({ _id: req.params.id, root: 'uploads' }, (err, gridStore) => {
     if (err) {

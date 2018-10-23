@@ -1,5 +1,5 @@
 
 module.exports = {
-    USER: 'AKIAJ7PFQ5KKJPJLGQKAm',
-    PASS: 'AgMeF4IK1mfC3DfcxAlznTt7pHmywfsXRnDVm8QO1OOB'
+    USER: 'AKIAJP3SZ2NFOXFPB6QQ',
+    PASS: 'Atx36zLzDwEcmgADu5in0yXcgpwB88zHR9ml10yVG/x5'
 }

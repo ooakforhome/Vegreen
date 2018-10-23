@@ -15,9 +15,8 @@ class FindUs extends Component {
     })
   }
 
-  handleSubmit(e){
-      e.preventDefault();
-      axios.post("/api/send", {
+  handleSubmit(){
+      axios.post("/api/sendMessage", {
         name: this.state.name,
         email: this.state.email,
         message: this.state.message

@@ -7,14 +7,14 @@ class Home extends Component {
     super(props);
     this.state = {
       img1: '/api/image/SS006.JPG',
-      img2: "https://static.wixstatic.com/media/654f73_a2fa981af2584cef8691745612834677~mv2.jpg/v1/fill/w_246,h_246,al_c,q_80,usm_0.66_1.00_0.01/654f73_a2fa981af2584cef8691745612834677~mv2.webp",
+      img2: "/api/image/Best_2017.png",
       img3: "/api/image/SS008.jpg",
     }
   }
 
 
   render(){
- 
+
     return(
       <div className="body_container">
         <div className="front_text">

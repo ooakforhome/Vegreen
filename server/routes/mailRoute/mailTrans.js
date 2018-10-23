@@ -4,15 +4,19 @@ const router = require('express').Router();
 const Contact = require('../../models/Contact');
 
 
-const transport = {
-host: 'email-smtp.us-east-1.amazonaws.com',
-auth: {
-    user: 'AKIAJ7PFQ5KKJPJLGQKA',
-    pass: 'AgMeF4IK1mfC3DfcxAlznTt7pHmywfsXRnDVm8QO1OOB'
-  }
+let transport = {
+  host: "email-smtp.us-east-1.amazonaws.com",
+  port: 465,
+  secure: true,
+  auth: {
+      user: creds.USER,
+      pass: creds.PASS
+    },
+  tls: {rejectUnauthorized: false},
+  debug: true
 };
 
-const transporter = nodemailer.createTransport(transport)
+let transporter = nodemailer.createTransport(transport)
 
 transporter.verify((error, success) => {
   if (error) {
@@ -24,19 +28,19 @@ transporter.verify((error, success) => {
 
 
 
-  router.post('/api/send', (req, res, next) => {
+  router.post('/api/sendMessage', (req, res, next) => {
     var name = req.body.name;
     var email = req.body.email;
     var message = req.body.message;
-    var content = `name: ${name} \n email: ${email} \n message: ${message} `
+    var content = `name: ${name} \n email: ${email} \n message: ${message} `;
 
     var mail = {
       from: 'david@eleganthf.net',
       to: 'vegreenfusion02@gmail.com',
       subject: `Vegreen Message: ${name}`,
-      text: `Name: ${name}\n E-Mail: ${email}\n Message: ${message}`
-    }
-    Contact.create(req.body)
+      text: `${content}`
+    };
+
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         res.json({

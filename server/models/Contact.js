@@ -15,7 +15,7 @@ const ContactSchema = new Schema ({
   },
   phone: {
     type: String,
-    require: true
+    require: false
   },
   message: {type: String, require: true},
   date : { type: Date, default: Date.now }

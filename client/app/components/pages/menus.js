@@ -15,11 +15,7 @@ class Menus extends Component {
       menuSushi: "/api/image/menuSushi.JPG",
       menuLunch: "/api/image/menuLunch.JPG",
       menu1L: "/api/image/menu1L.JPG",
-<<<<<<< HEAD
-      menu2l: "/api/image/menu2L.jpg",
-=======
       menu2L: "/api/image/menu2L.jpg",
->>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
       menuSushiL: "/api/image/menuSushiL.jpg",
       menuLunchL: "/api/image/menuLunchL.jpg",
       dish1 : "/api/image/dish-01-360px-240px.jpg",
@@ -35,11 +31,7 @@ class Menus extends Component {
     e.preventDefault();
     this.setState({
       showPopup: !this.state.showPopup,
-<<<<<<< HEAD
-      img: e.target.value,
-=======
       img: e.target.alt,
->>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
       name: e.target.name
     });
   }
@@ -78,33 +70,21 @@ class Menus extends Component {
           <div className="s-col-6 col-3 menu-thumb">
             <img
               src={this.state.menu2}
-<<<<<<< HEAD
-              value={this.state.menu2l}
-=======
               alt={this.state.menu2L}
->>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
               onClick={this.togglePopup.bind(this)}/>
             <p>MENU 02</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
               src={this.state.menuSushi}
-<<<<<<< HEAD
-              value={this.state.menuSushiL}
-=======
               alt={this.state.menuSushiL}
->>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
               onClick={this.togglePopup.bind(this)}/>
             <p>SUSHI MENU</p>
           </div>
           <div className="s-col-6 col-3 menu-thumb">
             <img
               src={this.state.menuLunch}
-<<<<<<< HEAD
-              value={this.state.menuLunchL}
-=======
               alt={this.state.menuLunchL}
->>>>>>> ea1ba30f49d88d3fd190688ca4ebb7cb7bc23795
               onClick={this.togglePopup.bind(this)}/>
             <p>LUNCH MENU</p>
           </div>

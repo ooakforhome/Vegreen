@@ -61,8 +61,8 @@ if (isDev) {
 
 
 // image router
-const imageAPI = require("./routes/api/image-api");
-app.use('/', imageAPI);
+// const imageAPI = require("./routes/api/image-api");
+// app.use('/', imageAPI);
 // end image router
 // mail router
 const mailAPI = require("./routes/mailRoute/mailTrans");

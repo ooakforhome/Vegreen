@@ -9,8 +9,8 @@ host: 'email-smtp.us-east-1.amazonaws.com',
 port: 465,
 secure: true,
 auth: {
-    user: 'AKIAJ7PFQ5KKJPJLGQKA',
-    pass: 'AgMeF4IK1mfC3DfcxAlznTt7pHmywfsXRnDVm8QO1OOB'
+    user: creds.USER,
+    pass: creds.PASS
   }
 };
 

@@ -24,7 +24,7 @@ import Mailbox from './components/pages/mailBox/mail';
 
 render((
   <Router>
-    <div>
+    <div className="index-body">
       <Route path="/" component = { Header } />
         <Route exact path="/" component = { Home } />
         <Route exact path="/menu" component = { Menus } />

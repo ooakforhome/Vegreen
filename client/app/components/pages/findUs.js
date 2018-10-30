@@ -5,7 +5,15 @@ class FindUs extends Component {
   constructor(props){
     super(props);
     this.state = {
-      contacts: []
+      contacts: [],
+      fbLogo : "/api/image/fb-icon.png",
+      inLogo : "/api/image/in-icon.png",
+      gplusLogo : "/api/image/Gplus-icon.png",
+      tweetLogo : "/api/image/tw-icon.png",
+      fb : "https://www.facebook.com/vegreenfusion",
+      in : "https://www.instagram.com/vegreenfusion/",
+      gplus : "www.gplus.com",
+      tweet : "https://twitter.com/vegreenfusion"
     }
   }
 
@@ -37,6 +45,13 @@ class FindUs extends Component {
         <h1>FIND US PAGE</h1>
         <div id="google_map_api" className="col-12 iframe">
           <iframe width="100%" height="100%" frameBorder="0" scrolling="no" title="Google Maps" aria-label="Google Maps" src="https://static.parastorage.com/services/santa/1.4664.14/static/external/googleMap.html?language=en&amp;lat=33.9613355&amp;long=-84.1421856&amp;address=3780 Old Norcross Rd, Duluth, GA 30096, USA&amp;addressInfo=VeGreen, Vegetarian Fusion Restaurant&amp;showZoom=true&amp;showStreetView=true&amp;showMapType=true"></iframe>
+        </div>
+
+        <div className="ssLarge col-12 s-col-12 footer_p">
+          <a href={this.state.fb}><img className="col-3 ss-icon" alt="fb" src={this.state.fbLogo} /></a>
+          <a href={this.state.in}><img className="col-3 ss-icon" alt="in" src={this.state.inLogo} /></a>
+          <a href={this.state.gplus}><img className="col-3 ss-icon" alt="gplus" src={this.state.gplusLogo} /></a>
+          <a href={this.state.tweet}><img className="col-3 ss-icon" alt="tweet" src={this.state.tweetLogo} /></a>
         </div>
 
         <div className="col-12 findUs_container">

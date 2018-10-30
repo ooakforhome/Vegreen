@@ -81,7 +81,11 @@ nav ul li:hover ul{ display: block; }
     display: inline-block;
     float:left;
   }
-
+  .front_text_inner{
+    h1 { text-shadow: 1px 1px white;}
+    h2 { text-shadow: 1px 1px white;}
+    p { text-shadow: 1px 1px green; font-size: 18px;}
+  }
   .home_cru { display: inline-block; }
 // Find Us
   .findUs_container {

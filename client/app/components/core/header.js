@@ -29,14 +29,14 @@ class Header extends Component {
           <nav className="nav-container">
             <ul>
               <li className="header_link"><Link className="header_link" to="/">HOME</Link></li>
-              <li className="header_link"><Link className="header_link" to="/menu">MENUS</Link>
+              <li className="header_link"><Link className="header_link" to="/menu">MENUS 菜單</Link>
                 <ul className={menuClass}>
-                  <li className="header_link"><Link className="header_link" to="/menu/lunch">LUNCH</Link></li>
-                  <li className="header_link"><Link className="header_link" to="/menu/regular">REGULAR</Link></li>
+                  <li className="header_link"><Link className="header_link" to="/menu/lunch">LUNCH 中餐</Link></li>
+                  <li className="header_link"><Link className="header_link" to="/menu/regular">REGULAR 菜單</Link></li>
                 </ul>
               </li>
-              <li className="header_link"><Link className="header_link" to="/find-us">FIND US</Link></li>
-              <li className="header_link"><Link className="header_link" to="/mission">MISSION</Link></li>
+              <li className="header_link"><Link className="header_link" to="/find-us">FIND US 找我們</Link></li>
+              <li className="header_link"><Link className="header_link" to="/mission">MISSION 使命</Link></li>
             </ul>
           </nav>
         </div>

@@ -48,12 +48,6 @@ class Footer extends Component {
               <li>Sun: 11AM to 9PM</li>
             </ul>
           </div>
-          <div className="ssLarge col-12 s-col-12 footer_p">
-            <a href={this.state.fb}><img className="col-3 ss-icon" alt="fb" src={this.state.fbLogo} /></a>
-            <a href={this.state.in}><img className="col-3 ss-icon" alt="in" src={this.state.inLogo} /></a>
-            <a href={this.state.gplus}><img className="col-3 ss-icon" alt="gplus" src={this.state.gplusLogo} /></a>
-            <a href={this.state.tweet}><img className="col-3 ss-icon" alt="tweet" src={this.state.tweetLogo} /></a>
-          </div>
         </div>
       </footer>
     )

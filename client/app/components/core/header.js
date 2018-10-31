@@ -25,7 +25,7 @@ class Header extends Component {
             <img alt="Vegreen logo" src="https://image.ibb.co/kWFzx9/Ve_Green_Logo_update_Long.jpg" className="logo_image"/>
           </Link>
         </div>
-        <div className="col-8 float-left">
+        <div className="col-8 float-left head-nav">
           <nav className="nav-container">
             <ul>
               <li className="header_link"><Link className="header_link" to="/">HOME</Link></li>

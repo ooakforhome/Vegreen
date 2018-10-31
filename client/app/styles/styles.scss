@@ -67,8 +67,16 @@ $background-size: contain;
 
 .x-button { margin: 5px; }
 // Header
+.head-nav {
+ position: relative;
+ height: 100%;
+ .nav-container {
+   position: absolute;
+   bottom: 0px;
+   right: 10px;
+ }
+}
 .page-top { display: block; }
-.nav-container { position:absolute; bottom: 0px; right: 10px; }
 .header_link { margin-left: 15px; float:left; }
 .logo_image { height: 100%; max-height: 100px; max-width: 200px;}
 
@@ -349,6 +357,25 @@ nav ul li:hover ul{ display: block; }
 
   .s-image { width: 90%; margin: 5%;}
   .title_logo { width: 180px; height: 200px; padding-top: 10px; margin:auto; }
+
+  .head-nav {
+   position: relative;
+   height: 100%;
+   .nav-container {
+    position:absolute;
+    bottom: 0px;
+    right: 10px;
+    li {
+     margin-left: 5px;
+     float: left;
+     font-size: .65em;
+     a {
+      margin:0px;
+    }
+   }
+  }
+ }
+
 
   .display-hide { display: none;}
   .body_container { height: auto; }

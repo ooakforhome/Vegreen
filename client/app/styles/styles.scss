@@ -59,7 +59,7 @@ $background-size: contain;
 .margin-10 { margin: 10px 0;}
 .margin-50 { margin: 50px 0;}
 
-.body_container { height: 80vh; }
+.body_container { height: 80vw; }
 
 .title_h1 { text-align: center; font-size: 3em; font-weight: 700; }
 .title_h2 { text-align: center; font-size: 2em; font-weight: 600; }
@@ -376,10 +376,11 @@ nav ul li:hover ul{ display: block; }
   }
  }
 
-
+  .mission_p {padding: 10px;}
   .display-hide { display: none;}
-  .body_container { height: auto; }
-
+  .body_container { height: 120vw; }
+  .lunch_body {height:100vw;}
+  .ss-icon {width: 23%; float: left; margin: 0 1%;}
   .menu_text { font-size: .9em; }
   .g-font { font-size: 1.2em;}
   .footer-mid { display: none;}

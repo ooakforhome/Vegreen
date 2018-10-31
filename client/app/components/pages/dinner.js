@@ -22,7 +22,7 @@ class Dinner extends Component {
 
   render(){
     return(
-      <div className="iCol-6">
+      <div className="s-iCol-8 iCol-6">
         <img
           src={this.state.menu1}
           alt="menu1"

@@ -20,7 +20,7 @@ class Lunch extends Component{
 
   render(){
     return(
-      <div className="iCol-6">
+      <div className="s-iCol-10 iCol-7 lunch_body">
         <img
           src={this.state.menuLunch}
           alt="Lunch"

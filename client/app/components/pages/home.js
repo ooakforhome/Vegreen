@@ -27,7 +27,7 @@ class Home extends Component {
         <img className="award" src={this.state.img2} />
         <ImageSlide />
         <div className="g-font">
-          <p className="s-col-12 iCol-10">"Our task must be to free ourselves by widening our circle of compassion to embrace all living creatures and the whole of nature and its beauty"</p>
+          <p className="s-col-12 iCol-12">"Our task must be to free ourselves by widening our circle of compassion to embrace all living creatures and the whole of nature and its beauty"</p>
           <p className="float-right">Albert Einstein</p>
         </div>
       </div>

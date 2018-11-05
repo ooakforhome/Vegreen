@@ -23,7 +23,7 @@ module.exports = (app) => {
       .catch((err) => next(err));
   });
 
-  app.put('/api/counters/:id/increment', (req, res, next) => {
+  app.put('/api/cou nters/:id/increment', (req, res, next) => {
     Counter.findById(req.params.id)
       .exec()
       .then((counter) => {

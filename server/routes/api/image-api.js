@@ -1,15 +1,17 @@
-const path = require('path');
+// const path = require('path');
+// const express = require('express');
+// const bodyParser = require('body-parser');
+// const router = require('express').Router();
 const crypto = require('crypto');
 const multer = require('multer');
 const GridFsStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
-const express = require('express');
-const bodyParser = require('body-parser');
-// const router = require('express').Router();
 const axios = require('axios');
 const mongodb = require('mongodb');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const ImageModel = require('../../models/Image_model');
+const sharp = require('sharp')
 
 const config = require('../../../config/config');
 const mongoURI = config.db;
@@ -58,12 +60,23 @@ app.post('/api/upload', upload, (req, res)=>{
     console.log("<<=======================>>");
     console.log(req.file)
     console.log("<<=======================>>");
-    console.log(req.file.filename)
-    return res.json({upload: req.file.filename})
+    let newImage = new ImageModel({
+      imageId: req.file.id,
+      length: req.file.length,
+      chunkSize: req.file.chunkSize,
+      uploadDate: req.file.uploadDate,
+      filename: req.file.filename,
+      md5: req.file.md5,
+      contentType: req.file.contentType,
+    });
+    newImage.save()
+      .then(() => console.log("uploaded"));
+    return res.json({upload: req.file});
 });
 
 
 
+// Delete image files and chunks
 app.delete('/filesdele/:id', (req, res) => {
   gfs.remove({ _id: req.params.id, root: 'uploads' }, (err, gridStore) => {
     if (err) {
@@ -87,6 +100,32 @@ app.get('/api/image/:filename', (req, res) =>{
       // Read output to browser
       const readstream = gfs.createReadStream(file.filename);
       readstream.pipe(res);
+      } else {
+      res.status(404).json({
+        err: 'Not an image'
+      })
+    }
+  })
+});
+
+// convert small image by sharp
+app.get('/api/imagesm/:filename', (req, res) =>{
+  gfs.files.findOne({filename: req.params.filename}, (err, file) => {
+    if(!file || file.length === 0) {
+      return res.status(404).json({
+        err: 'No files exist'
+      });
+    }
+    // Check if image
+    if(file.contentType === 'image/png' || file.contentType === 'image/jpeg' || file.contentType === 'image/gif'){
+      // Read output to browser
+      var transformer = sharp()
+        .resize(300)
+        .on('info', function(info) {
+          console.log('Image height is ' + info.height);
+        });
+      const readstream = gfs.createReadStream(file.filename);
+      readstream.pipe(transformer).pipe(res);
       } else {
       res.status(404).json({
         err: 'Not an image'
@@ -162,4 +201,4 @@ app.delete('/api/delete/:filename', (req, res) =>{
 
 
 
-}; //end module`
+}; //end module

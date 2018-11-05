@@ -28,11 +28,11 @@ class VeWorld extends Component {
           <img alt="slide_show" src="a.jpg" />
         </div>
         <div className="col-12">
-          <div className="col-6"><div className="iCol-7"><img alt="logo" src={this.state.img1} /></div></div>
-          <div className="col-6"><div className="iCol-7"><img alt="logo" src={this.state.img2} /></div></div>
+          <div className="col-6"><div className="iCol-8"><img alt="logo" src={this.state.img1} /></div></div>
+          <div className="col-6"><div className="iCol-8"><img alt="logo" src={this.state.img2} /></div></div>
         </div>
         <div className="col-12 abc">
-          <div className="iCol-10">
+          <div className="iCol-12">
             <iframe className="youIframe" src={vid1} />
           </div>
         </div>

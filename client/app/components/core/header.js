@@ -37,7 +37,7 @@ className="logo_image"/>
             <ul>
               <li className="header_link" onClick={this.toggleNav.bind(this)}><Link className="linkLi 
 header_link" to="/">HOME</Link></li>
-              <li className="header_link showSub" onClick={this.toggleNavli.bind(this)}><Link className="linkLi 
+              <li className="header_link showSub" onClick={this.toggleNav.bind(this)}><Link className="linkLi 
 header_link" to="/menu">MENUS 菜單</Link>
                 <ul className="ulul displayToggleLG">
                   <li className="ulli" onClick={this.toggleNav.bind(this)}><Link className="linkLi" 

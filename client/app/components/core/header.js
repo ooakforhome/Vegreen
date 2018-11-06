@@ -1,5 +1,5 @@
-import React, {Component} from "react"; import { Link } from "react-router-dom"; class Header extends Component 
-{
+import React, {Component} from "react"; import { add } from "material-design-icons"; import { Link } from 
+"react-router-dom"; class Header extends Component {
   constructor(props){
     super(props)
     this.state ={
@@ -37,14 +37,16 @@ className="logo_image"/>
             <ul>
               <li className="header_link" onClick={this.toggleNav.bind(this)}><Link className="linkLi 
 header_link" to="/">HOME</Link></li>
-              <li className="header_link showSub" onClick={this.toggleNav.bind(this)}><Link className="linkLi 
-header_link" to="/menu">MENUS 菜單</Link>
-                <ul className="ulul displayToggleLG">
-                  <li className="ulli" onClick={this.toggleNav.bind(this)}><Link className="linkLi" 
+              <li className="header_link showSub">
+                <p className="linkLii" onClick={this.toggleNav.bind(this)}><Link className=" header_link" 
+to="/menu">MENU 菜單</Link></p>
+                <i class="icon-nav material-icons" onClick={this.toggleNavli.bind(this)}>add</i>
+                  <ul className="ulul displayToggleLG">
+                    <li className="ulli" onClick={this.toggleNav.bind(this)}><Link className="linkLi" 
 to="/menu/lunch">LUNCH 中餐</Link></li>
-                  <li className="ulli" onClick={this.toggleNav.bind(this)}><Link className="linkLi" 
+                    <li className="ulli" onClick={this.toggleNav.bind(this)}><Link className="linkLi" 
 to="/menu/regular">REGULAR 菜單</Link></li>
-                </ul>
+                  </ul>
               </li>
               <li className="header_link" onClick={this.toggleNav.bind(this)}><Link className="linkLi 
 header_link" to="/find-us">FIND US 找我們</Link></li>

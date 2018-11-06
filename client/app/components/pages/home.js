@@ -21,7 +21,7 @@ class Home extends Component {
           <div className="front_text_inner">
             <h1>Lives We Saved So Far : 59,520</h1>
             <h2>我們目前為止救了59,520個生命 </h2>
-            <p>All plates designs present in this website are party request only.</p>
+            <p>All plate designs present in this website are party request only.</p>
           </div>
         </div>
         <img className="award" src={this.state.img2} />

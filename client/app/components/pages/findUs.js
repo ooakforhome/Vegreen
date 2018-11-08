@@ -21,7 +21,16 @@ class FindUs extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
+  };
+
+  emptyState(){
+    this.setState({
+      name: "",
+      email: "",
+      message: ""
+    })
   }
+
   handleSubmit(){
       axios.post("/api/sendMessage", {
         name: this.state.name,
@@ -29,15 +38,17 @@ class FindUs extends Component {
         message: this.state.message
       })
         .then((response)=>{
+          console.log(response);
           if (response.data.msg === 'success'){
               alert("Message Sent.");
-          }else if(response.data.msg === 'fail'){
+              this.emptyState();
+              document.getElementById("contact-form").reset();
+          }else if(response.data.msg == 'fail'){
               alert("Message failed to send.")
           }
-      })
-return alert("Thank you we have received your message.");
-      document.getElementById("contact-form").reset();
-  }
+      });
+  };
+
   render(){
     return(
       <div>

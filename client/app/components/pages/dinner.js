@@ -7,7 +7,8 @@ class Dinner extends Component {
     this.state = {
       menu1: "/api/image/menu1L.JPG",
       menu2: "/api/image/menu2L.jpg",
-      menuSushi: "/api/image/menuSushiL.jpg"
+      menuSushi: "/api/image/menuSushiL.jpg",
+      menuDrinkCake: "/api/image/menuDrinkCakeL.jpg"
     }
   }
 
@@ -38,7 +39,11 @@ class Dinner extends Component {
           alt="sushi"
           onClick={this.togglePopup.bind(this)}
         />
-
+        <img
+          src={this.state.menuDrinkCake}
+          alt="Drink and Cake"
+          onClick={this.togglePopup.bind(this)}
+        />
         {this.state.showPopup ?
           <MenuPopup
           name={this.state.name}

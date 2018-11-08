@@ -21,7 +21,16 @@ class FindUs extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
+  };
+
+  emptyState(){
+    this.setState({
+      name: "",
+      email: "",
+      message: ""
+    })
   }
+
   handleSubmit(){
       axios.post("/api/sendMessage", {
         name: this.state.name,
@@ -29,14 +38,17 @@ class FindUs extends Component {
         message: this.state.message
       })
         .then((response)=>{
+          console.log(response);
           if (response.data.msg === 'success'){
               alert("Message Sent.");
-          }else if(response.data.msg === 'fail'){
+              this.emptyState();
+              document.getElementById("contact-form").reset();
+          }else if(response.data.msg == 'fail'){
               alert("Message failed to send.")
           }
-      })
-      document.getElementById("contact-form").reset();
-  }
+      });
+  };
+
   render(){
     return(
       <div>
@@ -61,15 +73,15 @@ class FindUs extends Component {
               <h2>LEAVE US A MESSAGE</h2>
               <div className="find_us_input">
                 <label className="col-2 s-col-3">Name : </label>
-                <input className="col-9 s-col-8" type="text" name="name" value={this.props.name} onChange={this.onChanges.bind(this)}/>
+                <input className="col-9 s-col-8" type="text" name="name" value={this.props.name} onChange={this.onChanges.bind(this)} required/>
               </div>
               <div className="find_us_input">
                 <label className="col-2 s-col-3">E-Mail : </label>
-                <input className="col-9 s-col-8" type="email" name="email" value={this.props.email} onChange={this.onChanges.bind(this)}/>
+                <input className="col-9 s-col-8" type="email" name="email" value={this.props.email} onChange={this.onChanges.bind(this)} required/>
               </div>
               <div className="find_us_input">
                 <label className="col-2 s-col-3">Message : </label>
-                <textarea className="col-9 s-col-8" name="message" rows="5" value={this.props.message} onChange={this.onChanges.bind(this)}/>
+                <textarea className="col-9 s-col-8" name="message" rows="5" value={this.props.message} onChange={this.onChanges.bind(this)} required/>
               </div>
               <div className="submit_button">
                 <input className="float-right" type="submit" name="submit" />

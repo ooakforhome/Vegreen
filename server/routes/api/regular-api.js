@@ -12,4 +12,11 @@ module.exports = (app) => {
       .then((dishes) => res.json(dishes))
       .catch((err) => next(err));
   });
+
+  app.get('/api/category/:category', (req, res, next) => {
+    Regular.find({category: req.query.category})
+      .then(data => res.json(data))
+        .catch((err) => next(err))
+  });
+
 };

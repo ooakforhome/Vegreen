@@ -17,6 +17,7 @@ import Dinner from './components/pages/dinner';
 //parts
 import Gall from './components/pages/parts/imageGallery';
 import Upload from './components/pages/parts/imageUpload';
+import AddNewProduct from './components/pages/parts/add_new_product';
 
 // TEST
 import ImgSlide from './components/pages/imageSlide/imgSlide';
@@ -36,6 +37,7 @@ render((
         <Route exact path="/upload" component = { Upload } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
+        <Route exact path="/addnewproduct" component = { AddNewProduct } />
       <Route path="/" component = { Footer } />
     </div>
   </Router>

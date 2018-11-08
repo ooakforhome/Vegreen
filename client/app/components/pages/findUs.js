@@ -1,4 +1,8 @@
-import React, {Component} from 'react'; import axios from "axios"; class FindUs extends Component {
+import React, {Component} from 'react';
+import axios from "axios";
+
+
+class FindUs extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -45,13 +49,11 @@ import React, {Component} from 'react'; import axios from "axios"; class FindUs 
             Restaurant&amp;showZoom=true&amp;showStreetView=true&amp;showMapType=true">
           </iframe>
         </div>
-        <div className="ssLarge iCol-8 s-col-12 footer_p">
+        <div className="ssLarge s-col-12 footer_p">
           <a href={this.state.fb}><img className="col-3 ss-icon" alt="fb" src={this.state.fbLogo} /></a>
           <a href={this.state.in}><img className="col-3 ss-icon" alt="in" src={this.state.inLogo} /></a>
-          <a href={this.state.gplus}><img className="col-3 ss-icon" alt="gplus" src={this.state.gplusLogo}
-/></a>
-          <a href={this.state.tweet}><img className="col-3 ss-icon" alt="tweet" src={this.state.tweetLogo}
-/></a>
+          <a href={this.state.gplus}><img className="col-3 ss-icon" alt="gplus" src={this.state.gplusLogo}/></a>
+          <a href={this.state.tweet}><img className="col-3 ss-icon" alt="tweet" src={this.state.tweetLogo}/></a>
         </div>
         <div className="col-12 findUs_container">
           <div className="s-iCol-10 iCol-8">
@@ -59,18 +61,15 @@ import React, {Component} from 'react'; import axios from "axios"; class FindUs 
               <h2>LEAVE US A MESSAGE</h2>
               <div className="find_us_input">
                 <label className="col-2 s-col-3">Name : </label>
-                <input className="col-9 s-col-8" type="text" name="name" value={this.props.name}
-onChange={this.onChanges.bind(this)}/>
+                <input className="col-9 s-col-8" type="text" name="name" value={this.props.name} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="find_us_input">
                 <label className="col-2 s-col-3">E-Mail : </label>
-                <input className="col-9 s-col-8" type="email" name="email" value={this.props.email}
-onChange={this.onChanges.bind(this)}/>
+                <input className="col-9 s-col-8" type="email" name="email" value={this.props.email} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="find_us_input">
                 <label className="col-2 s-col-3">Message : </label>
-                <textarea className="col-9 s-col-8" name="message" rows="5" value={this.props.message}
-onChange={this.onChanges.bind(this)}/>
+                <textarea className="col-9 s-col-8" name="message" rows="5" value={this.props.message} onChange={this.onChanges.bind(this)}/>
               </div>
               <div className="submit_button">
                 <input className="float-right" type="submit" name="submit" />

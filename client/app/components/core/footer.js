@@ -19,7 +19,7 @@ class Footer extends Component {
   render(){
     return(
       <footer>
-        <div className="col-4 s-col-6 float-left">
+        <div className="col-4 s-col-6 float-left footerLeft">
           <div className="col-12 footer_p">
             <h2>ADDRESS:</h2>
             <p>
@@ -35,7 +35,7 @@ class Footer extends Component {
           <p className="footer__copyright">© 2016 by VeGreen. Vegetarian Fusion Restaurant</p>
         </div>
         <div className="col-4 float-left footer-mid">.</div>
-        <div className="col-4 s-col-6 float-left ">
+        <div className="col-4 s-col-6 float-left footerRight">
           <div className="col-12 s-col-12 footer_p">
             <h2>HOURS:</h2>
             <ul className="hoursClass">
@@ -55,3 +55,34 @@ class Footer extends Component {
 };
 
 export default Footer;
+
+// <table className="tableHour">
+//   <tr>
+//     <td className="td1">Mon:</td>
+//     <td className="td2">11AM to 9PM</td>
+//   </tr>
+//   <tr>
+//     <td className="td1">Tue:</td>
+//     <td className="td2">11AM to 9PM</td>
+//   </tr>
+//   <tr>
+//     <td className="td1">Wed:</td>
+//     <td className="td2">Temporary Closed</td>
+//   </tr>
+//   <tr>
+//     <td className="td1">Thur:</td>
+//     <td className="td2">11AM to 9PM</td>
+//   </tr>
+//   <tr>
+//     <td className="td1">Fri:</td>
+//     <td className="td2">11AM to 10PM</td>
+//   </tr>
+//   <tr>
+//     <td className="td1">Sat:</td>
+//     <td className="td2">11AM to 10PM</td>
+//   </tr>
+//   <tr>
+//     <td className="td1">Sun:</td>
+//     <td className="td2">11AM to 9PM</td>
+//   </tr>
+// </table>

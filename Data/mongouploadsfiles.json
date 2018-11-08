@@ -1,0 +1,593 @@
+{
+  "_id": {
+    "$oid": "5bb565cff187a6168f9d722d"
+  },
+  "length": 271041,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-04T00:58:55.680Z"
+  },
+  "filename": "logo.jpg",
+  "md5": "d047c876b6cb13b4f3e03b93033bdfcd",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "logo",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca18481a05a4520318a341"
+  },
+  "length": 24630,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:45:44.575Z"
+  },
+  "filename": "Home-slide-1-480x270.jpg",
+  "md5": "4a312a9cbc13967081eaabb9eb66750b",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-1-480x270",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca184d1a05a4520318a343"
+  },
+  "length": 29799,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:45:49.962Z"
+  },
+  "filename": "Home-slide-1-760x427.jpg",
+  "md5": "59241e8b697a456bea8d3a134affb0ac",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-1-760x427",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca18531a05a4520318a345"
+  },
+  "length": 22811,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:45:55.726Z"
+  },
+  "filename": "Home-slide-2-480x270.jpg",
+  "md5": "e9d7799078ffc399ce786dbc3d01bc53",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-2-480x270",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca18581a05a4520318a347"
+  },
+  "length": 28553,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:46:00.924Z"
+  },
+  "filename": "Home-slide-2-760x427.jpg",
+  "md5": "70ed9b261d0173bdda763fd3f1696e12",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-2-760x427",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca185f1a05a4520318a349"
+  },
+  "length": 24563,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:46:07.418Z"
+  },
+  "filename": "Home-slide-3-480x270.jpg",
+  "md5": "0adc93bab7605a8585af0458613abe22",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-3-480x270",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca18641a05a4520318a34b"
+  },
+  "length": 30059,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:46:12.242Z"
+  },
+  "filename": "Home-slide-3-760x427.jpg",
+  "md5": "891a9b0275dbe86f8759e4200f886a3d",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-3-760x427",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1a6d8a69b3528e635cf9"
+  },
+  "length": 180489,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:54:53.088Z"
+  },
+  "filename": "Home-slide-1-1920x1080.jpg",
+  "md5": "ff282425454c5e5eb408ee2df7395926",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-1-1920x1080",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1a798a69b3528e635cfb"
+  },
+  "length": 67570,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:55:05.506Z"
+  },
+  "filename": "Home-slide-2-1920x1080.jpg",
+  "md5": "d38a0be8cbba86581fb78f437bd024bd",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-2-1920x1080",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1a838a69b3528e635cfd"
+  },
+  "length": 67212,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T17:55:15.497Z"
+  },
+  "filename": "Home-slide-3-1920x1080.jpg",
+  "md5": "92e205108e4767056c70f87f4c90c804",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Home-slide-3-1920x1080",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1e888a69b3528e635d12"
+  },
+  "length": 204366,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:12:24.070Z"
+  },
+  "filename": "AtlMag.jpg",
+  "md5": "7c45cb33f6b457008c698b32b1befb57",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "AtlMag",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1e9c8a69b3528e635d18"
+  },
+  "length": 55071,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:12:44.734Z"
+  },
+  "filename": "NewArrival.jpg",
+  "md5": "f3102a6d6602d07b5a336aee1ebd2a2a",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "NewArrival",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1ea58a69b3528e635d1a"
+  },
+  "length": 100356,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:12:53.127Z"
+  },
+  "filename": "dish-01-360px-240px.jpg",
+  "md5": "fcdd490ef2282f8fd741f2c04027d6bb",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "dish-01-360px-240px",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1eaa8a69b3528e635d1c"
+  },
+  "length": 85673,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:12:58.859Z"
+  },
+  "filename": "dish-02-360px-240px.jpg",
+  "md5": "c89e1614e78d51bb0c5bde716d809a03",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "dish-02-360px-240px",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1eb08a69b3528e635d1e"
+  },
+  "length": 86382,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:13:04.524Z"
+  },
+  "filename": "dish-03-360px-240px.jpg",
+  "md5": "dcd8416b41c632709424f0112c2dc0ec",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "dish-03-360px-240px",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca1eb58a69b3528e635d20"
+  },
+  "length": 82278,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:13:09.860Z"
+  },
+  "filename": "dish-04-360px-240px.JPG",
+  "md5": "18bc3ad392e509997f83e3eb9023c466",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "dish-04-360px-240px",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca27d834238155378ac3d9"
+  },
+  "length": 152600,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:52:08.693Z"
+  },
+  "filename": "menu1.JPG",
+  "md5": "3e5f7a0c74fe9088c06f436e9c1fc17f",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menu1",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca27e234238155378ac3db"
+  },
+  "length": 749224,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:52:18.485Z"
+  },
+  "filename": "menu1L.JPG",
+  "md5": "6317b9131129e92563eca1a28d9ae4ba",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menu1L",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca27ec34238155378ac3df"
+  },
+  "length": 169527,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:52:28.663Z"
+  },
+  "filename": "menu2.JPG",
+  "md5": "cac3cca35d69de1028dbc29180be5a50",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menu2",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca27f034238155378ac3e1"
+  },
+  "length": 169527,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:52:32.766Z"
+  },
+  "filename": "menu2.JPG",
+  "md5": "cac3cca35d69de1028dbc29180be5a50",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menu2",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca27fe34238155378ac3e6"
+  },
+  "length": 84119,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:52:46.112Z"
+  },
+  "filename": "menuLunch.JPG",
+  "md5": "c3d275cca3d5eacd26dde857815cf561",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menuLunch",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca280b34238155378ac3eb"
+  },
+  "length": 870891,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:52:59.523Z"
+  },
+  "filename": "menu2L.jpg",
+  "md5": "1cf9ded4a45819b090383eff3d430dae",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menu2L",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca281834238155378ac3f0"
+  },
+  "length": 496684,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:53:12.143Z"
+  },
+  "filename": "menuLunchL.jpg",
+  "md5": "b6dca18e25df389961932dbd7caed3b2",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menuLunchL",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca282434238155378ac3f3"
+  },
+  "length": 102234,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:53:24.031Z"
+  },
+  "filename": "menuSushi.JPG",
+  "md5": "a5d0643c940ff16472c2407c45834944",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menuSushi",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bca282a34238155378ac3f5"
+  },
+  "length": 543193,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-19T18:53:30.956Z"
+  },
+  "filename": "menuSushiL.jpg",
+  "md5": "938ccdf7596eb1ed94d6cadcb6b3cdf6",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "menuSushiL",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bce0b8ffa000f767e1432df"
+  },
+  "length": 62279,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-22T17:40:31.139Z"
+  },
+  "filename": "VLongLogo.JPG",
+  "md5": "d23b0ceba16883581d26ecc7f1ba6393",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "VLongLogo",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bce0b97fa000f767e1432e1"
+  },
+  "length": 68003,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-22T17:40:39.635Z"
+  },
+  "filename": "VLongLogoL.JPG",
+  "md5": "4ed1399637bdba6f769795726f14a05b",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "VLongLogoL",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bcf5f06710b930669052892"
+  },
+  "length": 5192,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-23T17:48:54.125Z"
+  },
+  "filename": "fb-icon.png",
+  "md5": "a1421ed24bf12ce1e382538a18bb90c2",
+  "contentType": "image/png",
+  "metadata": {
+    "productName": "fb-icon",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bcf5f0c710b930669052894"
+  },
+  "length": 7303,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-23T17:49:00.437Z"
+  },
+  "filename": "Gplus-icon.png",
+  "md5": "d19429c0e9fd398e2991a732f1d07d34",
+  "contentType": "image/png",
+  "metadata": {
+    "productName": "Gplus-icon",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bcf5f12710b930669052896"
+  },
+  "length": 7186,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-23T17:49:06.825Z"
+  },
+  "filename": "in-icon.png",
+  "md5": "5bc465fd866f5b5330fec22e7b9ae23a",
+  "contentType": "image/png",
+  "metadata": {
+    "productName": "in-icon",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bcf5f18710b930669052898"
+  },
+  "length": 6380,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-23T17:49:12.651Z"
+  },
+  "filename": "tw-icon.png",
+  "md5": "ac4cb5fd35382888d78cd5555097b8fd",
+  "contentType": "image/png",
+  "metadata": {
+    "productName": "tw-icon",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bd847a0e3ef0047363789d5"
+  },
+  "length": 54423,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-30T11:59:28.210Z"
+  },
+  "filename": "Best_2017.jpg",
+  "md5": "d6bf6efc908a3208315762c8c20382f3",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Best_2017",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bd85560e3ef004736378ace"
+  },
+  "length": 28005,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-30T12:58:08.146Z"
+  },
+  "filename": "VLongLogoLo7.jpg",
+  "md5": "9dcd444bfd9cb44b21d5720b0b6d84fc",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "VLongLogoLo7",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bd8a573e3ef004736378b6b"
+  },
+  "length": 194085,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-30T18:39:47.908Z"
+  },
+  "filename": "Dinner-Menu.JPG",
+  "md5": "c4569548d3ae89d45ac5cddfba9f3155",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Dinner-Menu",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5bd8a57ae3ef004736378b6d"
+  },
+  "length": 192497,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-10-30T18:39:54.250Z"
+  },
+  "filename": "Set-Menu.jpg",
+  "md5": "e7efdf2b5b8f259676ff569c09002507",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Set-Menu",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5be0602369648219414d4942"
+  },
+  "length": 194085,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-11-05T15:22:11.565Z"
+  },
+  "filename": "Dinner-Menu-logo.jpg",
+  "md5": "c4569548d3ae89d45ac5cddfba9f3155",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Dinner-Menu-logo",
+    "ownBy": "Vegreen"
+  }
+} {
+  "_id": {
+    "$oid": "5be0602869648219414d494a"
+  },
+  "length": 192497,
+  "chunkSize": 261120,
+  "uploadDate": {
+    "$date": "2018-11-05T15:22:16.925Z"
+  },
+  "filename": "Set-Menu-logo.jpg",
+  "md5": "e7efdf2b5b8f259676ff569c09002507",
+  "contentType": "image/jpeg",
+  "metadata": {
+    "productName": "Set-Menu-logo",
+    "ownBy": "Vegreen"
+  }
+}

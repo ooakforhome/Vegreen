@@ -7,8 +7,8 @@ class Menus extends Component {
   constructor(props){
     super(props);
     this.state = {
-      awardImg : "/api/image/Best_2017.jpg",
-      magzImg  : "/api/image/AtlMag.jpg",
+      awardImg : "/api/imagesm/Best_2017.jpg",
+      magzImg  : "/api/imagesm/AtlMag.jpg",
       newArrImg: "/api/image/NewArrival.jpg",
       showPopup: false,
       menuSet: "/api/image/Dinner-Menu-logo.jpg",
@@ -66,18 +66,18 @@ class Menus extends Component {
         <div className="menu_box_container col-12 s-col-12">
           <div className="menu_box s-col-12 iCol-6">
             <div className="s-col-6 col-6 menu-thumb">
-		<Link to="/menu/lunch">
+		          <Link to="/menu/lunch">
               <img
                 src={this.state.menuSet}
                 alt="Set Menu" />
-		</Link>
+              </Link>
             </div>
             <div className="s-col-6 col-6 menu-thumb">
-            	<Link to="/menu/regular"> 
-	     <img
+            	<Link to="/menu/regular">
+            <img
                 src={this.state.menuReg}
                 alt="Regular Menu" />
-		</Link>
+              </Link>
             </div>
           </div>
         </div>

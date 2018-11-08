@@ -37,7 +37,6 @@ render((
         <Route exact path="/upload" component = { Upload } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
-        <Route exact path="/addnewproduct" component = { AddNewProduct } />
       <Route path="/" component = { Footer } />
     </div>
   </Router>

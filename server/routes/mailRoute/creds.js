@@ -1,5 +1,5 @@
 
 module.exports = {
-    USER: 'Put User Id Here',
-    PASS: 'Put Pass Word Here'
+    USER: 'AKIAIDMU5WRCO3AAXYMA',
+    PASS: 'Ap/7IgOgN5YSNXJR5Kv9HYbODUfwxKxXilHCEeNX1hdE'
 }

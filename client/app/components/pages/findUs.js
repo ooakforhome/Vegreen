@@ -35,6 +35,7 @@ class FindUs extends Component {
               alert("Message failed to send.")
           }
       })
+      return alert("Dear"+{this.state.name}+", Thank you we have received your message.")
       document.getElementById("contact-form").reset();
   }
   render(){

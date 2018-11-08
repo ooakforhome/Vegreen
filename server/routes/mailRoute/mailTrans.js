@@ -33,8 +33,8 @@ transporter.verify((error, success) => {
     var content = `name: ${name} \n email: ${email} \n message: ${message} `;
 
     var mail = {
-      from: 'david@eleganthf.net',
-      to: 'vegreenfusion02@gmail.com',
+      from: 'vegreenfusion02@gmail.com',
+      to: 'vegreencustomerservice@gmail.com, david@eleganthf.net',
       subject: `Vegreen Message: ${name}`,
       text: `${content}`
     };

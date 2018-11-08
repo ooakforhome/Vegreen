@@ -60,18 +60,7 @@ app.post('/api/upload', upload, (req, res)=>{
     console.log("<<=======================>>");
     console.log(req.file)
     console.log("<<=======================>>");
-    let newImage = new ImageModel({
-      imageId: req.file.id,
-      length: req.file.length,
-      chunkSize: req.file.chunkSize,
-      uploadDate: req.file.uploadDate,
-      filename: req.file.filename,
-      md5: req.file.md5,
-      contentType: req.file.contentType,
-    });
-    newImage.save()
-      .then(() => console.log("uploaded"));
-    return res.json({upload: req.file});
+     return res.json({upload: req.file});
 });
 
 

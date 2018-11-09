@@ -1,0 +1,111 @@
+category,spicy,garlic,nuts,dishId,name,nameCH,price,description
+Appetizers,FALSE,FALSE,FALSE,A02,Cucumber mushroom salad,青瓜真菌沙律,6.95,
+Appetizers,TRUE,FALSE,FALSE,A04,Fried enoki mushroom,椒鹽金針菇,(M) 7.95    (L) 10.95,
+Appetizers,FALSE,FALSE,FALSE,A05,Fried oyster mushroom,香炸蠔菇,(M) 8.95    (L) 11.95,
+Appetizers,FALSE,FALSE,FALSE,A06,VeGreen Salad,,8.95,"Avocado, quinoa, spinach, lettuce, cabbage, tomatoes, cucumber sesame oil based vinaigrette"
+Appetizers,FALSE,FALSE,FALSE,A07,Veggie spring roll (2),素春捲,2.95,
+Appetizers,FALSE,FALSE,FALSE,A08,Veggie dumpling (6),素餃子,5.5,
+Appetizers,FALSE,FALSE,FALSE,A12,Fried Kale Chips,,5.5,
+Appetizers,TRUE,FALSE,FALSE,A11,Salt & pepper chicken,椒鹽雞,6.95,
+Appetizers,FALSE,FALSE,FALSE,A13,Vegan crab salad,素蟹肉沙律,5.95,
+Appetizers,FALSE,FALSE,FALSE,A14,Seaweed salad,海帶沙律,4.95,
+Appetizers,FALSE,FALSE,FALSE,A15,Pickled daikon radish,醬蘿蔔,4.95,
+Appetizers,FALSE,FALSE,FALSE,A19,Crispy shrimp balls (6),香炸蝦球,5.95,
+Appetizers,FALSE,FALSE,FALSE,A17,Roti canai,印度煎餅,5.5,
+Appetizers,TRUE,FALSE,FALSE,A18,Salt & Pepper Eggplant,Crispy shrimp balls (6)   ----------------      5.95,9.95,
+Appetizers,TRUE,FALSE,FALSE,A20,Buffalo chicken drumsticks (4),香辣雞翅,9.95,
+Appetizers,FALSE,FALSE,FALSE,A21,Crab Rangoon (6),,6.95,
+Appetizers,FALSE,FALSE,FALSE,A22,Beyond Burger Bun (1),,3.95,
+Main_Course,TRUE,FALSE,FALSE,V03,Salt & Pepper Tofu,椒鹽豆腐,9.95,
+Main_Course,FALSE,FALSE,FALSE,V08,Seafood mushroom,西葫白玉金碧綠,10.95,"Seafood mushroom, pumpkin and chayote"
+Main_Course,FALSE,FALSE,FALSE,V01,Monkey mushroom fried satay,猴菌山伏鳳梨香,15.95,"Mushroom, taro, pineapple, satay sauce"
+Main_Course,FALSE,FALSE,FALSE,V06,Ginger Okra,羊角秋葵保健王,12.95,Stir fried okra and ginger
+Main_Course,FALSE,FALSE,FALSE,V14,Vegetable Mushroom Duet,雙菇扒菜胆,13.95,"Premium Shiitake mushroom, Chinese broccoli/American Broccoli. "
+Main_Course,FALSE,FALSE,FALSE,V15,Tofu mixed vegetables,雜菜豆腐,10.95,
+Main_Course,TRUE,FALSE,FALSE,V16,Aromatic spicy eggplant,魚香茄子,10.95,
+Main_Course,TRUE,FALSE,FALSE,V17,Mapo tofu,麻婆豆腐,10.95,
+Main_Course,FALSE,FALSE,FALSE,V18,Steam eggplant preserved vegetable,梅干菜蒸茄子,10.95,
+Main_Course,TRUE,FALSE,FALSE,V19,Beancurd Okra XO sauce,XO醬秋葵百頁,12.95,
+Main_Course,FALSE,FALSE,FALSE,V09,Sesame Tofu,芝麻豆腐,10.95,
+Main_Course,FALSE,FALSE,FALSE,V21,Flash-fried eggplant,特色扒全茄,13.95,"Topped with diced pepper, sweet rice wine, minced “pork”, cilantro"
+Main_Course,TRUE,FALSE,FALSE,V23,King Oyster Hot Pot,三杯杏花菇,14.95,"King oyster mushroom, ginger, Antarctica Seaweed"
+Main_Course,FALSE,FALSE,FALSE,V25,Stir Fried Snow Pea Leaves,清炒豆苗,13.95,
+Main_Course,FALSE,FALSE,FALSE,V13,Chinese Broccoli oyster sauce,蠔油炒時蔬,10.95,
+Main_Course,FALSE,FALSE,FALSE,V27,Cordycep peach gum stew,蟲草花桃膠腐卷,17.95,
+Main_Course,TRUE,FALSE,FALSE,V29,Green Curry mixed vegetable,綠咖哩雜菜,13.95,
+Rice_&_Noodles,FALSE,FALSE,TRUE,R02,Black Truffle Fried Rice,黑松露松子炒飯,16.95,"Black truffle, mushroom, green bean, avocado, pine nuts, chestnuts"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R03,Chinese toon fried rice,香椿醬野菌炒飯,10.95,"Mixed mushroom, Chinese toon fried rice"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R04,Chicken fried rice w/ pineapple,茄汁波羅素雞粒炒飯,10.95,Chicken fried rice with pineapple and tomato
+Rice_&_Noodles,FALSE,FALSE,FALSE,R05,BBQ pork fried rice,素叉燒雜菜炒飯,10.95,"BBQ “pork”, mixed green, and fried rice"
+Main_Course,FALSE,FALSE,FALSE,V20,Monkey mushroom Kyoto sauce,京都山芋猴頭菇,15.95,
+Main_Course,TRUE,FALSE,FALSE,V26,Yam & Eggplant Clay Pot,三杯淮山茄子煲,14.95,
+Main_Course,FALSE,FALSE,FALSE,V05,Mushroom medley,三菇木耳結塵緣,10.95,"Stir fried lotus root, fungus, and mixed green."
+Rice_&_Noodles,FALSE,FALSE,FALSE,R11,HK supreme soy sauce Ho Fun,港式鼓油皇炒河粉,11.95,(choice of ho fun or rice noodle)
+Rice_&_Noodles,FALSE,FALSE,FALSE,R12,Veggie Fried Rice,,9.95,
+Rice_&_Noodles,FALSE,FALSE,FALSE,R14,Noodle in soy bean sauce,炸醬麵,7.95,
+Rice_&_Noodles,TRUE,FALSE,FALSE,R15,Korean mixed green soup noodle,韓式抄馬麵   -----------------   (M) 9.95    (L) 10.95,"9.95, 10.95",
+Rice_&_Noodles,TRUE,FALSE,FALSE,R16,Tofu Tom Yum Udon,,9.95,
+Rice_&_Noodles,TRUE,FALSE,FALSE,R10,Black pepper steak udon,中式黑椒牛柳炒烏冬,11.95,Black pepper veggie “steak” with stir fried udon
+Rice_&_Noodles,FALSE,FALSE,FALSE,R17,Beef Pho,越南素牛湯麵,"7.95, 8.95",Veggie “beef” Pho noodle
+Rice_&_Noodles,FALSE,FALSE,FALSE,R19,Mixed veggie soup noodle,雜菜湯麵/河粉/米粉,"8.95, 9.95","Choice of regular noodles, ho fun or rice noodles"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R20,Veggie Medley Casserole,芋頭香菇梅菜煲仔飯,12.95,"Taro, mushrooms, preserved veggies in casserole rice"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R21,Mixed Green Rice Noodle Delight,蔬菜煎炒米粉,11.95,(Pan-fried Rice Noodle or Ho Fun)
+Rice_&_Noodles,FALSE,FALSE,FALSE,R23,Veggie shrimp fried rice,素蝦炒飯,10.95,
+Rice_&_Noodles,FALSE,FALSE,TRUE,R24,Chicken Pad Thai,泰式素雞炒麵,11.95,
+Rice_&_Noodles,TRUE,FALSE,FALSE,R25,Thai Basil Fried Rice,,10.95,
+Mock_Meat,TRUE,FALSE,FALSE,M02,Veggie Hunan style BBQ,凝脂瀟湘芙蓉玉,10.95,"BBQ “pork”, bean curd, stir fried in Hunan sauce"
+Mock_Meat,FALSE,FALSE,FALSE,M03,Minced pork green bean,欖菜玉豆養顏寶,10.95,"Green bean, “pork” stir fried with olive and vegetable"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R06,Salted Fish Casserole,咸魚雞粒煲仔飯,12.95,"Salted veggie “fish”, “chicken”, and casserole rice"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R09,Veggie Carbonara,欖菜煙肉米粉,10.95,"Veggies, Vegan bacon, rice noodle"
+Mock_Meat,FALSE,FALSE,FALSE,M05,Sweet sour chicken,咕嚕咕嚕波羅雞,10.95,"“Chicken”, pineapple, sweet sour sauce"
+Mock_Meat,TRUE,FALSE,FALSE,M06,Veggie pepper steak,鐵板黑椒素牛柳,12.95,“Steak” pan fried black pepper sauce
+Mock_Meat,FALSE,FALSE,FALSE,M09,Walnut marinade shrimp,核桃明蝦素球,14.95,
+Mock_Meat,TRUE,FALSE,FALSE,M10,Kung-pao chicken,宮保雞,10.95,
+Mock_Meat,FALSE,FALSE,FALSE,M11,Preserved veggie beef,砂鍋欖菜牛肉炒飯,12.95,fried rice casserole
+Mock_Meat,FALSE,FALSE,FALSE,M12,Beef broccoli,西蘭牛,11.95,
+Mock_Meat,FALSE,FALSE,FALSE,M13,Salted fish & chicken,咸魚雞粒滑豆腐煲,12.95,tofu clay pot
+Mock_Meat,FALSE,FALSE,FALSE,M15,Orange Chicken,,11.95,
+Mock_Meat,FALSE,FALSE,FALSE,M16,Salmon filet with bella mushroom,香糟蘑菇煎鱈魚,15.95," Pan-fried ""salmon"" filet with baby bella mushroom in wine sauce"
+Mock_Meat,FALSE,FALSE,FALSE,M17,Sesame Chicken,芝麻雞,11.95,
+Mock_Meat,FALSE,FALSE,FALSE,M18,Okra chicken fried Quinoa,秋葵雞塊炒藜麥,15.95,
+Mock_Meat,FALSE,FALSE,FALSE,M19,Mongolian Beef,蒙古牛肉,12.95,
+Mock_Meat,FALSE,FALSE,FALSE,M20,Sweet Sour Shrimp,甜酸蝦,14.95,
+Mock_Meat,TRUE,FALSE,FALSE,M22,Thai Spicy Shrimp,泰式炒大蝦,14.95,
+Mock_Meat,TRUE,FALSE,FALSE,M21,General Tso Chicken,左宗棠雞,11.95," Vegan Chicken, Broccoli, red pepper"
+Soup,FALSE,FALSE,FALSE,S01,Tofu mushroom soup,一品真菌養心湯,3.95,
+Soup,TRUE,FALSE,FALSE,S06,Hot & Sour Soup,酸辣湯,2.95,
+Soup,FALSE,FALSE,FALSE,S03,Tofu nori soup,紫菜豆腐湯,2.95,
+Sushi,TRUE,FALSE,FALSE,H02,Spicy Tuna Roll,香辣鮪魚卷,8.95,
+Sushi,FALSE,FALSE,FALSE,H06,Sushi Burrito,墨西哥壽司卷,8.95,
+Sushi,TRUE,FALSE,FALSE,H07,Volcano roll,火山卷,8.95,
+Sushi,FALSE,FALSE,FALSE,H03,California Fried Roll,加州炸捲,6.95,
+Sushi,FALSE,FALSE,FALSE,H10,Special “salmon” roll,三文魚青瓜卷,10.95,"Salmon, cucumber spicy mayo"
+Sushi,FALSE,FALSE,FALSE,H01,Futomaki roll,素太捲,5.95,
+Sushi,TRUE,FALSE,FALSE,H09,Green river roll,蟹肉牛油果卷,10.95,"Baked crab meat, cucumber, avocado"
+Sushi,FALSE,FALSE,FALSE,H11,Spider roll,天羅地網捲,9.95,"Fried enoki mushroom, cucumber, carrots topped with eel sauce"
+Sushi,FALSE,FALSE,FALSE,H13,Veggie Temaki,野菜手卷,"3.95 for 1, 7 for 2",
+Sushi,FALSE,FALSE,FALSE,H16,Rainbow Roll,彩虹卷,10.95,
+Sushi,FALSE,FALSE,FALSE,H17,Sushi platter,壽司拼盤,45,"Chef's choice of 3 sushi rolls, seaweed salad, and assorted nigiri"
+Sushi,FALSE,FALSE,FALSE,H18,Sushi Deluxe,什錦壽司,19.95,
+Sushi,TRUE,FALSE,FALSE,H14,Spicy Tuna Temaki,香辣鮪魚手卷,3.95,
+Sushi,TRUE,FALSE,FALSE,H15,Spicy Crab Temaki,香辣蟹肉手卷,3.95,
+Sushi,FALSE,FALSE,FALSE,H21,Mango Roll,芒果卷,9.95,
+Sushi,FALSE,FALSE,FALSE,H25,Summer Love Roll,夏之戀卷,11.95,
+Sushi,TRUE,FALSE,FALSE,H26,Wild Buffalo Roll,,10.95,
+Sushi,FALSE,FALSE,FALSE,H28,Beyond Sushi Roll,,10.95,
+Sushi,FALSE,FALSE,FALSE,H29,Tempura Shrimp Roll,,11.95,
+Sushi,FALSE,FALSE,FALSE,H30,Philadelphia Roll,,8.95,"Smoked salmon, vegan cream cheese, avacado, vegan eel sauce"
+Sushi,FALSE,FALSE,FALSE,H31,Fried Avocado Roll (6),,7.95,
+Drink,FALSE,FALSE,FALSE,D06,Thai tea,泰式奶茶,3.95,
+Drink,FALSE,FALSE,FALSE,D10,Ginger tea (hot/cold),薑茶,2.95,
+Drink,FALSE,FALSE,FALSE,D01,Canned soda,汽水,1.25,
+Drink,FALSE,FALSE,FALSE,D11,Morning sunrise (cold),旭日東昇,3.95,"Pineapple juice , club soda, splash of mango"
+Drink,FALSE,FALSE,FALSE,D12,Afternoon refresher (cold),聚精會神,3.95,"Lemonade, sprite, splash of strawberry"
+Drink,FALSE,FALSE,FALSE,D02,Sweet tea,凍甜茶,2.5,
+Drink,FALSE,FALSE,FALSE,D14,Matcha Latte,綠茶拿鐵,3.95,
+Drink,FALSE,FALSE,FALSE,D13,Evening tea (cold),傍晚茶,3.95,"Sweet tea, club soda, splash of raspberry and pomegranate"
+Drink,FALSE,FALSE,FALSE,D15,Chrysanthemum Tea (hot),菊花茶,3.95,
+Drink,FALSE,FALSE,FALSE,D16,Green Tea,綠茶,2.95,
+Cakes,FALSE,FALSE,FALSE,C01,By the slice/cup,一塊/杯,4.95,
+Cakes,FALSE,FALSE,FALSE,C03,,,,
+Rice_&_Noodles,TRUE,FALSE,FALSE,R18,Singapore rice noodle,星洲炒米粉,10.95,Curry fried “pork” “shrimp” vermicelli

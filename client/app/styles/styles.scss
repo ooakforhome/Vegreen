@@ -359,6 +359,32 @@ ul.ulul{    position: absolute;
   right: 10px;
   top: 45vw;
 }
+// listBox ==================================================================
+.flip-container {
+	width: 300px;
+	position: relative;
+}
+	.listFix{
+		float: left;
+	}
+	
+	.sgn{
+		width: 15px;
+		height: 15px;
+	}
+
+	.back {
+		transform: rotateX(180deg);
+	}
+
+	.flip-container .flipper {
+		transform-origin: 100% 213.5px; /* half of height */
+	}
+
+	.flip-container:hover .flipper {
+		transform: rotateX(-180deg);
+	}
+
 //=-==========Add New Product=================================
 .input_box {display: inline-block; width: 100%;}
 .input_name {text-align: right; }

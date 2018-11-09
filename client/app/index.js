@@ -13,11 +13,14 @@ import FindUs from './components/pages/findUs';
 import Mission from './components/pages/mission';
 import Lunch from './components/pages/lunch';
 import Dinner from './components/pages/dinner';
+import MenuPage from './components/pages/menuPage';
 
 //parts
 import Gall from './components/pages/parts/imageGallery';
 import Upload from './components/pages/parts/imageUpload';
 import AddNewProduct from './components/pages/parts/add_new_product';
+
+//page/menuParts
 
 // TEST
 import ImgSlide from './components/pages/imageSlide/imgSlide';
@@ -37,6 +40,7 @@ render((
         <Route exact path="/upload" component = { Upload } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
+        <Route exact path="/Menupage" component = { MenuPage } />        
       <Route path="/" component = { Footer } />
     </div>
   </Router>

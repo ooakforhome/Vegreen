@@ -13,3 +13,5 @@
 // mongoexport -d vegreendb --collection regulars --type json --out regular.json
 //
 // mongoimport -d vegreendb -c regulars --type csv --file C:\Users\David\Desktop\RegularDishesa.csv --headerline
+
+mongoimport -d vegreendb --collection regulars --type json --file regular.json

@@ -68,7 +68,7 @@ $background-size: contain;
 
 .margin-10 { margin: 10px 0;}
 .margin-50 { margin: 50px 0;}
-
+.margin-left_5 { margin: 0 5px 5px 0;}
 
 
 .title_h1 { text-align: center; font-size: 3em; font-weight: 700; font-family: 'Cabin Sketch', cursive;}
@@ -96,6 +96,15 @@ $background-size: contain;
 
 .displayToggleLG {
 	display: none;
+}
+
+.backToTop {
+	position: fixed;
+	right: 5px;
+	bottom: 150px;
+	height: 50px;
+	width: 50px;
+	z-index: 5;
 }
 
 ul.ulul{    position: absolute;
@@ -359,31 +368,88 @@ ul.ulul{    position: absolute;
   right: 10px;
   top: 45vw;
 }
+
+// menuPage ==================================================================
+	.menu_page {display: inline-block;}
+	.menu_box {margin-bottom: 50px; display: inline-block;}
+	.menu_category {
+		display: inline-block;
+		border: 1px solid;
+		margin: 0 5px;
+		padding: 0 10px;
+	}
 // listBox ==================================================================
-.flip-container {
-	width: 300px;
-	position: relative;
-}
+	.dish-container {
+		width: 300px;
+		float: left;
+		margin: 0 5px 15px 0;
+		position: relative;
+	}
+
+	// .fix-flip {
+	// 	width: 100%;
+	// 	position: relative;
+	// }
+
 	.listFix{
 		float: left;
 	}
-	
+
+	.sgn-lb {
+		display:block;
+	}
+
 	.sgn{
 		width: 15px;
 		height: 15px;
 	}
 
-	.back {
+	.menuh2{
+		text-align:center;
+		height:50px;
+	}
+	.listFix {font-weight: 600; font-size: 1.2em;}
+	.price-p {font-weight: 600; font-size:1.2em; float:right;padding-right:5px;}
+	// flipper ================================================================
+	.flip-container {
+		perspective: 1000px;
+		box-shadow: 0px 1px 0 black;
+	}
+
+	.vertical.flip-container:hover .flipper {
 		transform: rotateX(180deg);
 	}
 
-	.flip-container .flipper {
-		transform-origin: 100% 213.5px; /* half of height */
+	.flip-container, .front, .back {
+	height: 50px;
 	}
 
-	.flip-container:hover .flipper {
-		transform: rotateX(-180deg);
+	/* flip speed goes here */
+	.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
 	}
+
+	/* hide back of pane during swap */
+	.front, .back {
+	backface-visibility: hidden;
+
+	}
+
+	/* front pane, placed above back */
+	.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateX(0deg);
+	}
+
+	/* back, initially hidden pane */
+	.back {
+	transform: rotateX(180deg);
+	}
+
 
 //=-==========Add New Product=================================
 .input_box {display: inline-block; width: 100%;}

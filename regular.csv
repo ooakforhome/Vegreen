@@ -1,7 +1,7 @@
 category,spicy,garlic,nuts,dishId,name,nameCH,price,description
-Appetizers,FALSE,FALSE,FALSE,A02,Cucumber mushroom salad,青瓜真菌沙律,6.95,
-Appetizers,TRUE,FALSE,FALSE,A04,Fried enoki mushroom,椒鹽金針菇,(M) 7.95    (L) 10.95,
-Appetizers,FALSE,FALSE,FALSE,A05,Fried oyster mushroom,香炸蠔菇,(M) 8.95    (L) 11.95,
+Appetizers,false,false,false,A02,Cucumber mushroom salad,青瓜真菌沙律,6.95,
+Appetizers,true,false,false,A04,Fried enoki mushroom,椒鹽金針菇,7.95,
+Appetizers,FALSE,FALSE,FALSE,A05,Fried oyster mushroom,香炸蠔菇,8.95,
 Appetizers,FALSE,FALSE,FALSE,A06,VeGreen Salad,,8.95,"Avocado, quinoa, spinach, lettuce, cabbage, tomatoes, cucumber sesame oil based vinaigrette"
 Appetizers,FALSE,FALSE,FALSE,A07,Veggie spring roll (2),素春捲,2.95,
 Appetizers,FALSE,FALSE,FALSE,A08,Veggie dumpling (6),素餃子,5.5,
@@ -12,7 +12,7 @@ Appetizers,FALSE,FALSE,FALSE,A14,Seaweed salad,海帶沙律,4.95,
 Appetizers,FALSE,FALSE,FALSE,A15,Pickled daikon radish,醬蘿蔔,4.95,
 Appetizers,FALSE,FALSE,FALSE,A19,Crispy shrimp balls (6),香炸蝦球,5.95,
 Appetizers,FALSE,FALSE,FALSE,A17,Roti canai,印度煎餅,5.5,
-Appetizers,TRUE,FALSE,FALSE,A18,Salt & Pepper Eggplant,Crispy shrimp balls (6)   ----------------      5.95,9.95,
+Appetizers,TRUE,FALSE,FALSE,A18,Salt & Pepper Eggplant,,9.95,
 Appetizers,TRUE,FALSE,FALSE,A20,Buffalo chicken drumsticks (4),香辣雞翅,9.95,
 Appetizers,FALSE,FALSE,FALSE,A21,Crab Rangoon (6),,6.95,
 Appetizers,FALSE,FALSE,FALSE,A22,Beyond Burger Bun (1),,3.95,
@@ -43,11 +43,11 @@ Main_Course,FALSE,FALSE,FALSE,V05,Mushroom medley,三菇木耳結塵緣,10.95,"S
 Rice_&_Noodles,FALSE,FALSE,FALSE,R11,HK supreme soy sauce Ho Fun,港式鼓油皇炒河粉,11.95,(choice of ho fun or rice noodle)
 Rice_&_Noodles,FALSE,FALSE,FALSE,R12,Veggie Fried Rice,,9.95,
 Rice_&_Noodles,FALSE,FALSE,FALSE,R14,Noodle in soy bean sauce,炸醬麵,7.95,
-Rice_&_Noodles,TRUE,FALSE,FALSE,R15,Korean mixed green soup noodle,韓式抄馬麵   -----------------   (M) 9.95    (L) 10.95,"9.95, 10.95",
+Rice_&_Noodles,TRUE,FALSE,FALSE,R15,Korean mixed green soup noodle,韓式抄馬麵   -----------------   (M) 9.95    (L) 10.95,9.95,
 Rice_&_Noodles,TRUE,FALSE,FALSE,R16,Tofu Tom Yum Udon,,9.95,
 Rice_&_Noodles,TRUE,FALSE,FALSE,R10,Black pepper steak udon,中式黑椒牛柳炒烏冬,11.95,Black pepper veggie “steak” with stir fried udon
-Rice_&_Noodles,FALSE,FALSE,FALSE,R17,Beef Pho,越南素牛湯麵,"7.95, 8.95",Veggie “beef” Pho noodle
-Rice_&_Noodles,FALSE,FALSE,FALSE,R19,Mixed veggie soup noodle,雜菜湯麵/河粉/米粉,"8.95, 9.95","Choice of regular noodles, ho fun or rice noodles"
+Rice_&_Noodles,FALSE,FALSE,FALSE,R17,Beef Pho,越南素牛湯麵,7.95,Veggie “beef” Pho noodle
+Rice_&_Noodles,FALSE,FALSE,FALSE,R19,Mixed veggie soup noodle,雜菜湯麵/河粉/米粉,8.95,"Choice of regular noodles, ho fun or rice noodles"
 Rice_&_Noodles,FALSE,FALSE,FALSE,R20,Veggie Medley Casserole,芋頭香菇梅菜煲仔飯,12.95,"Taro, mushrooms, preserved veggies in casserole rice"
 Rice_&_Noodles,FALSE,FALSE,FALSE,R21,Mixed Green Rice Noodle Delight,蔬菜煎炒米粉,11.95,(Pan-fried Rice Noodle or Ho Fun)
 Rice_&_Noodles,FALSE,FALSE,FALSE,R23,Veggie shrimp fried rice,素蝦炒飯,10.95,
@@ -83,7 +83,7 @@ Sushi,FALSE,FALSE,FALSE,H10,Special “salmon” roll,三文魚青瓜卷,10.95,"
 Sushi,FALSE,FALSE,FALSE,H01,Futomaki roll,素太捲,5.95,
 Sushi,TRUE,FALSE,FALSE,H09,Green river roll,蟹肉牛油果卷,10.95,"Baked crab meat, cucumber, avocado"
 Sushi,FALSE,FALSE,FALSE,H11,Spider roll,天羅地網捲,9.95,"Fried enoki mushroom, cucumber, carrots topped with eel sauce"
-Sushi,FALSE,FALSE,FALSE,H13,Veggie Temaki,野菜手卷,"3.95 for 1, 7 for 2",
+Sushi,FALSE,FALSE,FALSE,H13,Veggie Temaki,野菜手卷,3.95,"3.95 for 1, 7 for 2"
 Sushi,FALSE,FALSE,FALSE,H16,Rainbow Roll,彩虹卷,10.95,
 Sushi,FALSE,FALSE,FALSE,H17,Sushi platter,壽司拼盤,45,"Chef's choice of 3 sushi rolls, seaweed salad, and assorted nigiri"
 Sushi,FALSE,FALSE,FALSE,H18,Sushi Deluxe,什錦壽司,19.95,
@@ -107,5 +107,5 @@ Drink,FALSE,FALSE,FALSE,D13,Evening tea (cold),傍晚茶,3.95,"Sweet tea, club s
 Drink,FALSE,FALSE,FALSE,D15,Chrysanthemum Tea (hot),菊花茶,3.95,
 Drink,FALSE,FALSE,FALSE,D16,Green Tea,綠茶,2.95,
 Cakes,FALSE,FALSE,FALSE,C01,By the slice/cup,一塊/杯,4.95,
-Cakes,FALSE,FALSE,FALSE,C03,,,,
+Cakes,FALSE,FALSE,FALSE,C03,Whole Cake,整個蛋糕,39,Whole Cake (Need 2 days advance notice!)
 Rice_&_Noodles,TRUE,FALSE,FALSE,R18,Singapore rice noodle,星洲炒米粉,10.95,Curry fried “pork” “shrimp” vermicelli

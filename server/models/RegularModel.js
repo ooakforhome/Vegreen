@@ -8,9 +8,9 @@ const RegularSchema = new Schema({
   nameCH: {type: String},
   price: {type: Number},
   description: {type: String},
-  spicy: {type: Boolean, default: false},
-  garlic: {type: Boolean, default: false},
-  nuts: {type: Boolean, default: false}
+  spicy: {type: String},
+  garlic: {type: String},
+  nuts: {type: String}
 });
 
 module.exports = mongoose.model("Regular", RegularSchema);

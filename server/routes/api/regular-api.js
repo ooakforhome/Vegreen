@@ -38,6 +38,7 @@ module.exports = (app) => {
 
   app.get('/api/:category', (req, res, next) => {
     Regular.find({category: req.params.category})
+      .sort({dishId: 1})
       .then(data => res.json(data))
         .catch((err) => next(err))
   });

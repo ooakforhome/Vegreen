@@ -13,7 +13,7 @@ module.exports = (app) => {
       .catch((err) => next(err));
   });
 
-  app.get('/api/category/:category', (req, res, next) => {
+  app.get('/api/category/', (req, res, next) => {
     Regular.find({category: req.query.category})
       .then(data => res.json(data))
         .catch((err) => next(err))

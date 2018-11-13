@@ -64,7 +64,7 @@ class Menus extends Component {
         </div>
 
         <div className="menu_box_container col-12 s-col-12">
-          <div className="menu_box s-col-12 iCol-6">
+          <div className="s-col-12 iCol-6">
             <div className="s-col-6 col-6 menu-thumb">
 		          <Link to="/menu/lunch">
               <img

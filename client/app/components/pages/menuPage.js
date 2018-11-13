@@ -33,7 +33,7 @@ class MenuPage extends Component {
             <a href="#CakeID"><li className="float-left margin-left_5"><button>Cake</button> </li></a>
           </ul>
         </div>
-
+ 
         <div id="AppetizersID" className="menu_box iCol-12">
             <Appetizers />
         </div>

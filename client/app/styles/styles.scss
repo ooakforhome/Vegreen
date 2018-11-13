@@ -376,14 +376,11 @@ ul.ulul{    position: absolute;
 		display: inline-block;
 		border: 1px solid;
 		margin: 0 5px;
-		padding: 0 10px;
 	}
 // listBox ==================================================================
 	.dish-container {
-		width: 300px;
-		float: left;
-		margin: 0 5px 15px 0;
-		position: relative;
+		min-width:260px;
+		padding-bottom: 10px;
 	}
 
 	// .fix-flip {
@@ -405,8 +402,12 @@ ul.ulul{    position: absolute;
 	}
 
 	.menuh2{
-		text-align:center;
-		height:50px;
+		text-align: center;
+    height: 50px;
+    margin-top: 0px;
+    background-color: lightgreen;
+    border-bottom: 1px solid;
+    box-shadow: inset 0px 1px 20px grey;
 	}
 	.listFix {font-weight: 600; font-size: 1.2em;}
 	.price-p {font-weight: 600; font-size:1.2em; float:right;padding-right:5px;}
@@ -606,6 +607,7 @@ ul.ulul .ulli {
 // header end
 
 
+
   .mission_p {padding: 10px; font-size: .9em;}
   .display-hide { display: none;}
   // .body_container { height: 120vw; }
@@ -630,6 +632,17 @@ ul.ulul .ulli {
   }
   .footer__copyright {font-size: .5em; position:absolute; bottom: 5px; left: 5px;}
 	.new_arrival_box h2{ display:none; }
+
+// ListBox ---------------------------------------------------------------------
+	// .dish-container {
+	// 	padding: 0 0px 15px 0;
+	// 	position: relative;
+	// }
+}
+@media screen and (max-width: 830px) and (min-width: 641px) {
+	.dish-container {
+		width: 50% !important;
+	}
 }
 
 @media only screen and (max-width: 760px){

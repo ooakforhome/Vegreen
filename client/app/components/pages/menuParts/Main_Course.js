@@ -21,8 +21,6 @@ componentWillMount(){
 
 
   render(){
-    console.log("==============1=state=1==============");
-    console.log(this.state.dishes)
     if(!this.state.dishes){
       return "waiting for data";
     };

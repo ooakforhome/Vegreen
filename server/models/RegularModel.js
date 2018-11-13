@@ -7,10 +7,11 @@ const RegularSchema = new Schema({
   name: {type: String},
   nameCH: {type: String},
   price: {type: Number},
+  priceL: {type: Number},
   description: {type: String},
-  spicy: {type: Boolean, default: false},
-  garlic: {type: Boolean, default: false},
-  nuts: {type: Boolean, default: false}
+  spicy: {type: String},
+  garlic: {type: String},
+  nuts: {type: String}
 });
 
 module.exports = mongoose.model("Regular", RegularSchema);

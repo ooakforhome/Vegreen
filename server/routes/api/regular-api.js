@@ -13,8 +13,32 @@ module.exports = (app) => {
       .catch((err) => next(err));
   });
 
-  app.get('/api/category/', (req, res, next) => {
+  app.get('/api/dishid', (req, res, next) => {
+    Regular.find({dishId: req.query.dishId})
+      .then(data => res.json(data))
+        .catch((err) => next(err))
+  });
+
+  app.get('/api/category', (req, res, next) => {
     Regular.find({category: req.query.category})
+      .then(data => res.json(data))
+        .catch((err) => next(err))
+  });
+
+  app.get('/api/dishes', (req, res, next) => {
+    Regular.find({$or: [
+          {category: req.query.category},
+          {dishId: req.query.dishId},
+          {name: req.query.name}
+        ]
+      })
+      .then(data => res.json(data))
+        .catch((err) => next(err))
+  });
+
+  app.get('/api/:category', (req, res, next) => {
+    Regular.find({category: req.params.category})
+      .sort({dishId: 1})
       .then(data => res.json(data))
         .catch((err) => next(err))
   });

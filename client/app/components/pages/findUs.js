@@ -52,7 +52,7 @@ class FindUs extends Component {
   render(){
     return(
       <div>
-        <h1>FIND US PAGE</h1>
+        <h1>FIND US</h1>
         <div id="google_map_api" className="col-12 iframe">
           <iframe width="100%" height="100%" frameBorder="0" scrolling="no" title="Google Maps"
             aria-label="Google Maps"

@@ -50,8 +50,8 @@ className="logo_image"/>
               </li>
               <li className="header_link toggleshow showSub">
                 <div className="linkLii" onClick={this.toggleNav.bind(this)}>
-                  <Link to="/menu">
-                    <p className="goMenu">MENU 菜單</p>
+                  <Link className=" header_link" to="/menu">
+                    <p className="goMenu"> MENU 菜單</p>
                   </Link>
                 </div>
                 <i className="icon-nav material-icons" onClick={this.toggleNavli.bind(this)}>add</i>

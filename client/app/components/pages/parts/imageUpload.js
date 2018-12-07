@@ -17,14 +17,16 @@ class ImageUpload extends Component {
     fetch('/api/upload/', {
       method: 'POST',
       body: formData
-    }).then(res =>{ res.json()}).then(data => {
-         if(data){
-           alert('Upload Successfully!!')
-         } else {
-           alert('Upload failed')
-         }
-       })
-
+      })
+        .then(res => {
+          console.log("====================res=====================")
+          console.log(res.ok);
+          if(res.ok === true){
+            alert("upload successfully")
+          } else {
+            alert ("upload failed")
+          }
+        })
   };
 
   render(){

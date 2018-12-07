@@ -36,7 +36,7 @@ class ImageGallery extends Component {
   render(){
 
     const ShowImg = ({_id, filename}) => (
-      <div className="col-4">
+      <div className="col-3 gal_contain">
         <p>{filename}</p>
         <img alt={filename} src={`/api/image/${filename}`} />
         <p className="abc">{_id}}</p>

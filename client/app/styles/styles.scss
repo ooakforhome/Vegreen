@@ -98,6 +98,11 @@ $background-size: contain;
 	display: none;
 }
 
+.gal_contain{
+	border:1px solid black;
+	margin: 0 5px 5px 0;
+}
+
 .backToTop {
 	position: fixed;
 	right: 5px;
@@ -506,12 +511,10 @@ ul.ulul{    position: absolute;
 				}
 		  }
 		}
-	.goMenu {
-		border: 1px solid;
-		display: block;
-		z-index: 1;
-		height: 100%;
-	}
+ .goMenu {
+   display: block;
+   height:100%;
+ }
 }
 
 @media only screen and (max-width: 640px){
@@ -621,7 +624,10 @@ ul.ulul .ulli {
 	.clicked { display: block;}
 // header end
 
-
+ .header_link {
+  width: 100%;
+  height: 100%;
+ }
 
   .mission_p {padding: 10px; font-size: .9em;}
   .display-hide { display: none;}

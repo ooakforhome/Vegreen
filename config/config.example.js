@@ -14,4 +14,4 @@
 //
 // mongoimport -d vegreendb -c regulars --type csv --file C:\Users\David\Desktop\RegularDishesa.csv --headerline
 
-mongoimport -d vegreendb --collection regulars --type json --file regular.json
+// mongoimport -d vegreendb --collection regulars --type json --file regular.json

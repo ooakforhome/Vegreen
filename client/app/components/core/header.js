@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { add, clear } from "material-design-icons";
 import { Link } from "react-router-dom";
+// header
 
 class Header extends Component {
   constructor(props){

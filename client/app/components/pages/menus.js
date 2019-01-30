@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import MenuPopup from './parts/MenuPopup';
 import { Link } from "react-router-dom";
 // import LunchPopup from './parts/LunchPopup';
+// menus page
 
 class Menus extends Component {
   constructor(props){

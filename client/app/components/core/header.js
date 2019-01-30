@@ -6,7 +6,8 @@ class Header extends Component {
   constructor(props){
     super(props)
     this.state ={
-      isClicked: false
+      isClicked: false,
+      logoImg: "/api/image/rsz_vegreen-png.png"
     }
   }
   handleClick(){
@@ -35,7 +36,7 @@ class Header extends Component {
       <header className="page-top">
         <div className="s-col-6 col-4 float-left">
           <Link to="/">
-            <img alt="Vegreen logo" src="https://image.ibb.co/kWFzx9/Ve_Green_Logo_update_Long.jpg"
+            <img alt="Vegreen logo" src={this.state.logoImg}
 className="logo_image"/>
           </Link>
         </div>

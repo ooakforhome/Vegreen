@@ -18,15 +18,13 @@ class ImageUpload extends Component {
       method: 'POST',
       body: formData
       })
-        .then(res => {
-          console.log("====================res=====================")
-          console.log(res.ok);
-          if(res.ok === true){
-            alert("upload successfully")
-          } else {
-            alert ("upload failed")
-          }
-        })
+      .then(res => {
+        if( res.ok === true ){
+          alert("upload successfully")
+        } else {
+          alert ("upload failed")
+        }
+      })
   };
 
   render(){

@@ -57,9 +57,6 @@ module.exports = (app) => {
 
 // Upload images
 app.post('/api/upload', upload, (req, res)=>{
-    console.log("<<=======================>>");
-    console.log(req.file)
-    console.log("<<=======================>>");
      return res.json({upload: req.file});
 });
 

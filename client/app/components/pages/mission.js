@@ -4,8 +4,8 @@ class Mission extends Component {
   constructor(props){
     super(props);
       this.state = {
-        vegreenImg: "/api/image/VLongLogo.JPG",
-        longLogo: "/api/image/VLongLogoL.JPG"
+        vegreenImg: "/api/image/rsz_vegreen-png.png",
+        longLogo: "/api/image/rsz_vegreen-png.png"
       }
   }
 

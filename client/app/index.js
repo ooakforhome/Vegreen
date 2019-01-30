@@ -13,7 +13,7 @@ import FindUs from './components/pages/findUs';
 import Mission from './components/pages/mission';
 import Lunch from './components/pages/lunch';
 import Dinner from './components/pages/dinner';
-import MenuPage from './components/pages/menuPage';
+// import MenuPage from './components/pages/menuPage';
 
 //parts
 import Gall from './components/pages/parts/imageGallery';
@@ -39,8 +39,7 @@ render((
         <Route exact path="/gal" component = { Gall } />
         <Route exact path="/upload" component = { Upload } />
         <Route exact path="/slide" component = { ImgSlide } />
-        <Route exact path="/mailin" component = { Mailbox } />
-        <Route exact path="/Menupage" component = { MenuPage } />        
+        <Route exact path="/mailin" component = { Mailbox } />   
       <Route path="/" component = { Footer } />
     </div>
   </Router>

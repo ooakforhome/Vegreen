@@ -13,10 +13,6 @@ import FindUs from './components/pages/findUs';
 import Mission from './components/pages/mission';
 import Lunch from './components/pages/lunch';
 import Dinner from './components/pages/dinner';
-<<<<<<< HEAD
-=======
-// import MenuPage from './components/pages/menuPage';
->>>>>>> b64d70ff45a37e217e4c9bb604ef52754051459d
 
 //parts
 import Gall from './components/pages/parts/imageGallery';
@@ -42,11 +38,7 @@ render((
         <Route exact path="/gal" component = { Gall } />
         <Route exact path="/upload" component = { Upload } />
         <Route exact path="/slide" component = { ImgSlide } />
-<<<<<<< HEAD
         <Route exact path="/mailin" component = { Mailbox } />
-=======
-        <Route exact path="/mailin" component = { Mailbox } />   
->>>>>>> b64d70ff45a37e217e4c9bb604ef52754051459d
       <Route path="/" component = { Footer } />
     </div>
   </Router>

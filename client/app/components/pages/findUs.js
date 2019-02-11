@@ -57,7 +57,7 @@ class FindUs extends Component {
           <iframe width="100%" height="100%" frameBorder="0" scrolling="no" title="Google Maps"
             aria-label="Google Maps"
             src="https://static.parastorage.com/services/santa/1.4664.14/static/external/googleMap.html?language=en&amp;lat=33.9613355&amp;long=-84.1421856&amp;address=3780
-            Old Norcross Rd, Duluth, GA 30096, USA&amp;addressInfo=VeGreen, Vegetarian Fusion
+            Old Norcross Rd, Duluth, GA 30096, USA&amp;addressInfo=VeGreen, vegan Fusion
             Restaurant&amp;showZoom=true&amp;showStreetView=true&amp;showMapType=true">
           </iframe>
         </div>

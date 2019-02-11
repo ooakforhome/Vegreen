@@ -26,7 +26,7 @@ class Menus extends Component {
       dish2 : "/api/image/dish-02-360px-240px.jpg",
       dish3 : "/api/image/dish-03-360px-240px.jpg",
       dish4 : "/api/image/dish-04-360px-240px.JPG",
-      text1: "Vegreen\'s menu is carefully designed for your healthy consumption and we have the best flavor you can imagine\. Moreover, We bring out the flavor of the world\. We want to open up your mind\, and show you that vegetarian has no boundary\. From Asia\, to Europe\, to North and South America\, or to Australia\, \"Any type of dish can now be replaced by vegetarian\"\, and it will taste as good as the original dish if not better\."
+      text1: "Vegreen\'s menu is carefully designed for your healthy consumption and we have the best flavor you can imagine\. Moreover, We bring out the flavor of the world\. We want to open up your mind\, and show you that vegan has no boundary\. From Asia\, to Europe\, to North and South America\, or to Australia\, \"Any type of dish can now be replaced by vegan\"\, and it will taste as good as the original dish if not better\."
     }
   }
 

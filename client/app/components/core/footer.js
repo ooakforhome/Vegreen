@@ -32,7 +32,7 @@ class Footer extends Component {
             <h2>PHONE:</h2>
             <p> (770)495-8828 </p>
           </div>
-          <p className="footer__copyright">© 2016 by VeGreen. Vegetarian Fusion Restaurant</p>
+          <p className="footer__copyright">© 2016 by VeGreen. vegan Fusion Restaurant</p>
         </div>
         <div className="col-4 float-left footer-mid">.</div>
         <div className="col-4 s-col-6 float-left footerRight">

@@ -7,6 +7,9 @@ ssh -t -t ubuntu@ip-172-31-22-216 <<EOF
     git pull origin master
     echo "Install and Test"
     npm install
-    pm2 restart server.js
+    pm2 stop server.js
+    echo "Server stop"
+    pm2 start server.js
+    echo "Server Start"
     exit
 EOF

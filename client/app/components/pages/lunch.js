@@ -5,7 +5,7 @@ class Lunch extends Component{
   constructor(props){
     super(props)
     this.state = {
-      menuLunch: "/api/image/menuLunchL.JPG",
+      menuLunch: "/api/image/menuLunchL",
     }
   }
 

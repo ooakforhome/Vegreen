@@ -15,6 +15,31 @@ class ImageGallery extends Component {
     this.loadImageData();
   }
 
+  _handleImageChange(e){
+  e.preventDefault();
+    this.setState({
+      file: e.target.files[0]
+    });
+  }
+
+  _handleSubmit(e){
+    e.preventDefault();
+    let formData = new FormData();
+    formData.append("file", this.state.file);
+
+    fetch('/api/upload/', {
+      method: 'POST',
+      body: formData
+      })
+      .then(res => {
+        if( res.ok === true ){
+          alert("upload successfully")
+        } else {
+          alert ("upload failed")
+        }
+      })
+  };
+
   loadImageData=()=>{
     API.getImages()
       .then(res => {
@@ -56,6 +81,20 @@ class ImageGallery extends Component {
 
     return(
       <div>
+        <div style={{padding:"15px", margin:"15px", border:"1px solid black", width:"250px"}}>
+          <form
+            className="form_class"
+            encType="multipart/form-data"
+            onSubmit = { this._handleSubmit.bind(this) }>
+            <input
+              className="fileInput"
+              type="file"
+              name="file"
+              id="file"
+              onChange={this._handleImageChange.bind(this) } />
+          <button className="saveBtn"> Upload </button>
+          </form>
+        </div>
         <ShowAllImg datas={this.state.images}/>
       </div>
     )

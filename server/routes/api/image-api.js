@@ -36,7 +36,7 @@ const storage = new GridFsStorage({
           if (err) {
             return reject(err);
           }
-          const filename = file.originalname.slice(0,-4);
+          const filename = file.originalname;
           const fileInfo = {
             filename: filename,
             bucketName: 'uploads',
@@ -60,7 +60,10 @@ app.post('/api/upload', upload, (req, res)=>{
      return res.json({upload: req.file});
 });
 
-
+// Upload and replace current files
+app.post('/api/menuupload', (req, res)=>{
+     console.log(upload)
+});
 
 // Delete image files and chunks
 app.delete('/filesdele/:id', (req, res) => {
@@ -71,6 +74,26 @@ app.delete('/filesdele/:id', (req, res) => {
     return res.json({delete: "successful"})
     // res.redirect('/');
   });
+});
+
+// Get single image info
+app.get('/api/singleimage/:filename', (req, res) =>{
+  gfs.files.findOne({filename: req.params.filename}, (err, file) => {
+    if(!file || file.length === 0) {
+      return res.status(404).json({
+        err: 'No files exist'
+      });
+    }
+    // Check if image
+    if(file.contentType === 'image/png' || file.contentType === 'image/jpeg' || file.contentType === 'image/gif'){
+      // Read output to browser
+      console.log(res)
+      } else {
+      res.status(404).json({
+        err: 'Not an image'
+      })
+    }
+  })
 });
 
 // Get single image
@@ -154,11 +177,7 @@ app.get('/api/aafiles', (req, res) =>{
 
 // delete one by ID
 // working
-app.delete('/api/findinfo/:objid', (req, res)=>{
-  gfs.files.deleteOne({_id: new mongodb.ObjectID(req.params.objid)}, (err, file) => {
-    return res.json(file);
-  })
-});
+
 
 // Find one by ID
 //workding
@@ -178,13 +197,12 @@ app.delete('/api/delete/:filename', (req, res) =>{
       });
     } else {
       gfs.files.deleteOne({filename: req.params.filename}, (info) => {
-        console.log("deteled")
+        console.log("deleted")
         console.log(res.json({info: "delete complete"}))
       })
     }
   })
 });
-
 
 
 }; //end module

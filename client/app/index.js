@@ -36,10 +36,12 @@ render((
         <Route exact path="/find-us" component = { FindUs } />
         <Route exact path="/mission" component = { Mission } />
         <Route exact path="/images" component = { Gall } />
-        <Route exact path="/upload" component = { Upload } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
       <Route path="/" component = { Footer } />
     </div>
   </Router>
 ), document.getElementById('app'));
+
+
+        // <Route exact path="/upload" component = { Upload } />

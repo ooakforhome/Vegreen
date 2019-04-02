@@ -14,6 +14,8 @@ import Mission from './components/pages/mission';
 import Lunch from './components/pages/lunch';
 import Dinner from './components/pages/dinner';
 
+import MenuDetail from './components/pages/menuPage'
+
 //parts
 import Gall from './components/pages/parts/imageGallery';
 import Upload from './components/pages/parts/imageUpload';
@@ -38,6 +40,7 @@ render((
         <Route exact path="/images" component = { Gall } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
+        <Route exact path="/menudetail" component = { MenuDetail } />
       <Route path="/" component = { Footer } />
     </div>
   </Router>

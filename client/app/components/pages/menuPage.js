@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MainCourse from './menuParts/Main_Course';
 import Appetizers from './menuParts/Appetizers';
 import RiceNoodle from './menuParts/RiceAndNoodle';
-import MockMeat from './menuParts/Mock_meat';
+import MockMeat from './menuParts/Mock_Meat';
 import Soup from './menuParts/Soup';
 import Sushi from './menuParts/Sushi';
 import Drink from './menuParts/Drink';

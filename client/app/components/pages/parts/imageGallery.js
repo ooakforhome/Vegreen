@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import API from '../api-modules';
 import axios from 'axios';
 
+import EditForm from './EditForm'
+
 class ImageGallery extends Component {
   constructor(props){
     super(props);
@@ -157,8 +159,12 @@ class ImageGallery extends Component {
         </div>
       )
 
+
     return(
       <div>
+
+        <EditForm />
+
         <div style={{display: "flex", padding:"15px", margin:"15px", border:"1px solid black"}}>
           <h2>Lunch Menu</h2>
           <div className="col-3 gal_contain">

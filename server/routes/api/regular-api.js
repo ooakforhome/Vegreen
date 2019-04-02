@@ -43,4 +43,12 @@ module.exports = (app) => {
         .catch((err) => next(err))
   });
 
+  app.put('/api/editdish', (req, res, err) => {
+    Regular.findOneAndUpdate({dishId: req.query.dishId}, req.body)
+      .then((dishes) => {
+        return res.json(dishes)
+      })
+      .catch(err);
+  });
+
 };

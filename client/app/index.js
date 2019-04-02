@@ -40,7 +40,7 @@ render((
         <Route exact path="/images" component = { Gall } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
-        <Route exact path="/menudetail" component = { MenuDetail } />
+
       <Route path="/" component = { Footer } />
     </div>
   </Router>

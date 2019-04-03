@@ -185,11 +185,7 @@ onDeleteSubmit(e){
       <div>
         <AddDish />
         <EditForm />
-        <DeleteDish
-          onChangeDeleteDish = {this.onChangeDeleteDish.bind(this)}
-          onDeleteSubmit = {this.onDeleteSubmit.bind(this)}
-          deleteMsg = {this.state.deleteMsg}
-          />
+
         <div style={{display: "flex", padding:"15px", margin:"15px", border:"1px solid black"}}>
           <h2>Lunch Menu</h2>
           <div className="col-3 gal_contain">
@@ -359,3 +355,10 @@ onDeleteSubmit(e){
 };
 
 export default ImageGallery;
+
+ 
+// <DeleteDish
+//   onChangeDeleteDish = {this.onChangeDeleteDish.bind(this)}
+//   onDeleteSubmit = {this.onDeleteSubmit.bind(this)}
+//   deleteMsg = {this.state.deleteMsg}
+//   />

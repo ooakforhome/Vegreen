@@ -183,7 +183,6 @@ app.get('/api/aafiles', (req, res) =>{
 //workding
 app.get('/api/findinfo/:objid', (req, res)=>{
   gfs.files.findOne({_id: new mongodb.ObjectID(req.params.objid)}, (err, file) => {
-    console.log("<================== some info ========================>")
     return res.json(file);
   })
 });

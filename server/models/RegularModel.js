@@ -11,7 +11,8 @@ const RegularSchema = new Schema({
   description: {type: String},
   spicy: {type: String},
   garlic: {type: String},
-  nuts: {type: String}
+  nuts: {type: String},
+  showDish: {type: String, default: "true"}
 });
 
 module.exports = mongoose.model("Regular", RegularSchema);

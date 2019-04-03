@@ -27,9 +27,9 @@ componentWillMount(){
 
     const ListAllDishes = ({products}) => (
       <div className="dishes-cont">
-        {products.map((product) =>
-          <ListBox {...product}/>
-        )}
+        {products.map((product) =>{
+          return((product.showDish !== "false")?<ListBox {...product}/>:'')
+        })}
       </div>
     )
 

@@ -15,8 +15,14 @@ module.exports = (app) => {
 
   app.get('/api/dishid', (req, res, next) => {
     Regular.find({dishId: req.query.dishId})
-      .then(data => res.json(data))
-        .catch((err) => next(err))
+      .then(data =>{
+        if(data.length>0){
+        console.log(res.json(data))
+      } else {
+        return res.send({"Dish": "NOT EXIST"})
+      }
+      })
+      .catch((err) => next(err));
   });
 
   app.get('/api/category', (req, res, next) => {
@@ -49,6 +55,14 @@ module.exports = (app) => {
         return res.json(dishes)
       })
       .catch(err);
+  });
+
+  app.delete('/api/deletebydishid', (req, res, next) => {
+    Regular.findOneAndDelete({dishId: req.query.dishId})
+      .then(data =>{
+        return res.send({"status": "item deleted"})
+      })
+      .catch((err) => next(err));
   });
 
 };

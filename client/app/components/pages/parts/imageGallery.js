@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import EditForm from './EditForm';
 import AddDish from './AddDish';
+import DeleteDish from './DeleteDish';
 
 class ImageGallery extends Component {
   constructor(props){
@@ -11,6 +12,7 @@ class ImageGallery extends Component {
       this.state={
         data: [],
         images: [],
+        deleteMsg: "",
         lunchImages: "/api/image/menuLunchL",
         dinnerImages: {
           menu1: "/api/image/menu1L",
@@ -120,7 +122,25 @@ class ImageGallery extends Component {
       })
   }
 // Menu image updates end
-
+onChangeDeleteDish(e){
+  this.setState({deleteDishId: e.target.value.toUpperCase()})
+}
+onDeleteSubmit(e){
+  e.preventDefault();
+  axios.delete(`/api/deletebydishid?dishId=${this.state.deleteDishId}`)
+    .then(info => {
+      console.log(info)
+      if(info.data.status !== "null"){
+        this.setState({
+          deleteMsg: info.data.status
+        })
+      } else {
+        this.setState({
+          deleteMsg: "No Such File"
+        })
+      }
+    })
+}
 
   loadImageData=()=>{
     API.getImages()
@@ -165,7 +185,11 @@ class ImageGallery extends Component {
       <div>
         <AddDish />
         <EditForm />
-
+        <DeleteDish
+          onChangeDeleteDish = {this.onChangeDeleteDish.bind(this)}
+          onDeleteSubmit = {this.onDeleteSubmit.bind(this)}
+          deleteMsg = {this.state.deleteMsg}
+          />
         <div style={{display: "flex", padding:"15px", margin:"15px", border:"1px solid black"}}>
           <h2>Lunch Menu</h2>
           <div className="col-3 gal_contain">

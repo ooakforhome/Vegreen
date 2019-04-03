@@ -60,7 +60,12 @@ module.exports = (app) => {
   app.delete('/api/deletebydishid', (req, res, next) => {
     Regular.findOneAndDelete({dishId: req.query.dishId})
       .then(data =>{
-        return res.send({"status": "item deleted"})
+        if(data){
+          return res.send({"status": "Item deleted"})
+        } else {
+          return res.send({"status": "null"})
+        }
+
       })
       .catch((err) => next(err));
   });

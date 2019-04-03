@@ -147,7 +147,7 @@ class EditForm extends Component {
                   data-name="spicy"
                   name="spicy"
                   type="checkbox"
-                  checked={(this.state.currentDish.spicy !== "FALSE")?"true": ""}
+                  checked={(this.state.currentDish.spicy !== "FALSE")?"TRUE": ""}
                   value="TRUE"/>
                 TRUE
               </label>
@@ -158,7 +158,7 @@ class EditForm extends Component {
                     data-name="spicy"
                     name="spicy"
                     type="checkbox"
-                    checked={(this.state.currentDish.spicy === "FALSE")?"true": ""}
+                    checked={(this.state.currentDish.spicy === "FALSE")?"TRUE": ""}
                     value="FALSE"/>
                   FALSE
                 </label>
@@ -173,7 +173,7 @@ class EditForm extends Component {
                     data-name="garlic"
                     name="garlic"
                     type="checkbox"
-                    checked={(this.state.currentDish.garlic !== "FALSE")?"true": ""}
+                    checked={(this.state.currentDish.garlic !== "FALSE")?"TRUE": ""}
                     value="TRUE"/>
                   TRUE
                 </label>

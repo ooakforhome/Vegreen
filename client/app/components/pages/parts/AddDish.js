@@ -10,9 +10,9 @@ class AddDish extends Component {
       dishId: "",
       newDish: {
         category:"MainCourse",
-        spicy: "false",
-        garlic: "false",
-        nuts: "false",
+        spicy: "FALSE",
+        garlic: "FALSE",
+        nuts: "FALSE",
         dishId: "",
         name: "",
         nameCH: "",
@@ -40,7 +40,20 @@ class AddDish extends Component {
       .then(res=>{
         if(res.data.Dish){
           this.setState({
-            editActive: true
+            editActive: true,
+            newDish: {
+              category:"Main_Course",
+              spicy: "FALSE",
+              garlic: "FALSE",
+              nuts: "FALSE",
+              dishId: this.state.dishId,
+              name: "",
+              nameCH: "",
+              price: 0,
+              priceL: 0,
+              description: "",
+              showDish: "true"
+            }
           })
         } else {
           this.setState({
@@ -75,9 +88,9 @@ class AddDish extends Component {
             dishId: "",
             newDish: {
               showDish: "false",
-              spicy: "false",
-              garlic: "false",
-              nuts: "false",
+              spicy: "FALSE",
+              garlic: "FALSE",
+              nuts: "FALSE",
               dishId: "",
               name: "",
               nameCH: "",
@@ -137,29 +150,30 @@ class AddDish extends Component {
               data-name="showDish"
               name="showDish"
               type="checkbox"
-              checked={(this.state.newDish.showDish !== "false")?"true": ""}
-              value={(this.state.newDish.showDish === "false")?"true": "false"}/>
-            <label>spicy: </label>
+              checked={(this.state.newDish.showDish !== "FALSE")?"TRUE": ""}
+              value={(this.state.newDish.showDish === "FALSE")?"TRUE": "FALSE"}/>
+
+            <label> spicy:</label>
             <input onChange={this.onDishEditChange}
               data-name="spicy"
               name="spicy"
               type="checkbox"
-              checked={(this.state.newDish.spicy !== "false")?"true": ""}
-              value={(this.state.newDish.spicy === "false")?"true": "false"}/>
-            <label>garlic: </label>
+              checked={(this.state.newDish.spicy === "FALSE")?"": "TRUE"}
+              value={(this.state.newDish.spicy === "FALSE")?"TRUE": "FALSE"}/>
+            <label> garlic:</label>
             <input onChange={this.onDishEditChange}
               data-name="garlic"
               name="garlic"
               type="checkbox"
-              checked={(this.state.newDish.garlic !== "false")?"true": ""}
-              value={(this.state.newDish.garlic === "false")?"true": "false"}/>
-            <label>nuts: </label>
+              checked={(this.state.newDish.garlic === "FALSE")?"": "TRUE"}
+              value={(this.state.newDish.garlic === "FALSE")?"TRUE": "FALSE"}/>
+            <label> nuts:</label>
             <input onChange={this.onDishEditChange}
               data-name="nuts"
               name="nuts"
               type="checkbox"
-              checked={(this.state.newDish.nuts !== "false")?"true": ""}
-              value={(this.state.newDish.nuts === "false")?"true": "false"}/>
+              checked={(this.state.newDish.nuts === "FALSE")?"": "TRUE"}
+              value={(this.state.newDish.nuts === "FALSE")?"TRUE": "FALSE"}/>
           </span>
 
         <div className="text">

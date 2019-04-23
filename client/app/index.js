@@ -37,7 +37,7 @@ render((
           <Route exact path="/menu/regular" component = { Dinner } />
         <Route exact path="/find-us" component = { FindUs } />
         <Route exact path="/mission" component = { Mission } />
-        <Route exact path="/images" component = { Gall } />
+        <Route exact path="/akfsfj2ofz;vn82lkdjlsf92jff;zlnvq9gqgozjvqovm" component = { Gall } />
         <Route exact path="/slide" component = { ImgSlide } />
         <Route exact path="/mailin" component = { Mailbox } />
         <Route exact path="/menudetail" component = { MenuDetail } />
